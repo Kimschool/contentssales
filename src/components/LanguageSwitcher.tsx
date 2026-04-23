@@ -10,7 +10,7 @@ export function LanguageSwitcher({ current }: { current: Locale }) {
   const rest = segments.slice(1).join("/");
 
   return (
-    <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 text-xs font-semibold">
+    <div className="flex items-center gap-1 rounded-full border border-ink-200 bg-white p-1 text-xs font-semibold">
       {locales.map((l) => {
         const href = `/${l}${rest ? "/" + rest : ""}`;
         const active = l === current;
@@ -21,8 +21,8 @@ export function LanguageSwitcher({ current }: { current: Locale }) {
             className={
               "rounded-full px-3 py-1 transition " +
               (active
-                ? "bg-brand-gradient text-white shadow-glow"
-                : "text-ink-200/80 hover:text-white")
+                ? "bg-brand-500 text-white"
+                : "text-ink-500 hover:text-ink-900")
             }
           >
             {localeLabels[l]}

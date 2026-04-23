@@ -1,75 +1,60 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}"
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
-        ink: {
-          50: "#f5f3ff",
-          100: "#ede9fe",
-          200: "#ddd6fe",
-          300: "#c4b5fd",
-          400: "#a78bfa",
-          500: "#8b5cf6",
-          600: "#7c3aed",
-          700: "#6d28d9",
-          800: "#5b21b6",
-          900: "#4c1d95",
-          950: "#1a0b2e"
+        // 단일 브랜드 컬러 — 위버스 물색(aqua/sky)
+        brand: {
+          50: "#eaf7fb",
+          100: "#d0ecf4",
+          200: "#a5d9e9",
+          300: "#72bfd8",
+          400: "#45a3c5",
+          500: "#1f86ad",
+          600: "#156c91",
+          700: "#0f5473",
+          800: "#0b3d55",
+          900: "#082a3b"
         },
-        neon: {
-          pink: "#ff3ea5",
-          purple: "#8b5cf6",
-          blue: "#3b82f6",
-          cyan: "#22d3ee"
+        ink: {
+          50: "#f7f9fb",
+          100: "#eef2f6",
+          200: "#dde4ec",
+          300: "#b9c5d2",
+          400: "#8596a8",
+          500: "#5a6b7d",
+          600: "#3d4b5c",
+          700: "#273140",
+          800: "#172030",
+          900: "#0c141f"
         },
         canvas: {
-          DEFAULT: "#0a0414",
-          soft: "#120726",
-          surface: "#1a0b2e"
+          DEFAULT: "#ffffff",
+          soft: "#f5f8fa",
+          band: "#eef4f7"
         }
-      },
-      backgroundImage: {
-        "hero-gradient":
-          "linear-gradient(135deg, #1a0b2e 0%, #4c1d95 40%, #7c3aed 70%, #ff3ea5 100%)",
-        "brand-gradient":
-          "linear-gradient(90deg, #8b5cf6 0%, #ff3ea5 50%, #3b82f6 100%)",
-        "card-gradient":
-          "linear-gradient(145deg, rgba(139, 92, 246, 0.12) 0%, rgba(255, 62, 165, 0.08) 100%)",
-        "glow-gradient":
-          "radial-gradient(circle at 30% 20%, rgba(139, 92, 246, 0.35) 0%, transparent 55%), radial-gradient(circle at 75% 70%, rgba(255, 62, 165, 0.25) 0%, transparent 55%)"
       },
       fontFamily: {
         sans: [
           "var(--font-sans)",
+          "Pretendard",
           "system-ui",
           "-apple-system",
           "Segoe UI",
-          "Pretendard",
           "sans-serif"
         ],
-        display: ["var(--font-display)", "system-ui", "sans-serif"]
+        display: [
+          "var(--font-display)",
+          "Pretendard",
+          "system-ui",
+          "sans-serif"
+        ]
       },
       boxShadow: {
-        glow: "0 0 40px -10px rgba(139, 92, 246, 0.55)",
-        "glow-pink": "0 0 40px -10px rgba(255, 62, 165, 0.65)"
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-12px)" }
-        },
-        shimmer: {
-          "0%": { backgroundPosition: "0% 50%" },
-          "100%": { backgroundPosition: "200% 50%" }
-        }
-      },
-      animation: {
-        float: "float 6s ease-in-out infinite",
-        shimmer: "shimmer 6s linear infinite"
+        card: "0 1px 2px rgba(12, 20, 31, 0.04), 0 4px 12px rgba(12, 20, 31, 0.06)",
+        hover: "0 2px 4px rgba(12, 20, 31, 0.06), 0 10px 30px rgba(31, 134, 173, 0.15)"
       }
     }
   },

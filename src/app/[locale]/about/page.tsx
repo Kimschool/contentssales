@@ -25,26 +25,26 @@ export default async function AboutPage({
       <section className="py-20">
         <Container>
           <div className="grid gap-6 lg:grid-cols-2">
-            <article className="border-gradient relative overflow-hidden p-10">
-              <div className="text-[11px] font-semibold tracking-[0.22em] text-ink-200/70">
+            <article className="rounded-2xl border border-ink-200 bg-white p-10 shadow-card">
+              <div className="text-[11px] font-semibold tracking-[0.22em] text-brand-600">
                 MISSION
               </div>
-              <h3 className="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">
+              <h3 className="mt-4 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
                 {dict.aboutPage.missionTitle}
               </h3>
-              <p className="mt-5 text-base leading-relaxed text-ink-100/90">
+              <p className="mt-5 text-base leading-relaxed text-ink-600">
                 {dict.aboutPage.mission}
               </p>
             </article>
 
-            <article className="border-gradient relative overflow-hidden p-10">
-              <div className="text-[11px] font-semibold tracking-[0.22em] text-ink-200/70">
+            <article className="rounded-2xl border border-ink-200 bg-white p-10 shadow-card">
+              <div className="text-[11px] font-semibold tracking-[0.22em] text-brand-600">
                 VISION
               </div>
-              <h3 className="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">
+              <h3 className="mt-4 font-display text-3xl font-bold text-ink-900 sm:text-4xl">
                 {dict.aboutPage.visionTitle}
               </h3>
-              <p className="mt-5 text-base leading-relaxed text-ink-100/90">
+              <p className="mt-5 text-base leading-relaxed text-ink-600">
                 {dict.aboutPage.vision}
               </p>
             </article>
@@ -54,12 +54,12 @@ export default async function AboutPage({
             {dict.aboutPage.info.map((i) => (
               <div
                 key={i.label}
-                className="rounded-3xl border border-white/10 bg-canvas-surface p-6"
+                className="rounded-2xl border border-ink-200 bg-canvas-soft p-6"
               >
-                <div className="text-[11px] font-semibold tracking-[0.22em] text-ink-200/70">
+                <div className="text-[11px] font-semibold tracking-[0.22em] text-brand-600">
                   {i.label}
                 </div>
-                <div className="mt-3 font-display text-lg font-bold text-white">
+                <div className="mt-3 font-display text-base font-bold text-ink-900">
                   {i.value}
                 </div>
               </div>

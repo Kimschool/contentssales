@@ -22,10 +22,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="min-h-screen bg-canvas text-ink-50">
-        <div className="pointer-events-none fixed inset-0 -z-10 bg-glow-gradient" />
+      <body className="min-h-screen bg-white text-ink-900">
         <Header locale={locale} dict={dict} />
-        <main className="relative">{children}</main>
+        <main>{children}</main>
         <Footer locale={locale} dict={dict} />
       </body>
     </html>

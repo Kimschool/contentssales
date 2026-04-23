@@ -35,10 +35,10 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
         <select
           name="category"
           defaultValue={f.categories[0]}
-          className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-neon-pink"
+          className="mt-2 w-full rounded-lg border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none transition focus:border-brand-500"
         >
           {f.categories.map((c) => (
-            <option key={c} value={c} className="bg-canvas">
+            <option key={c} value={c}>
               {c}
             </option>
           ))}
@@ -51,24 +51,24 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
           name="message"
           rows={6}
           placeholder={f.messagePlaceholder}
-          className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-ink-200/40 outline-none transition focus:border-neon-pink"
+          className="mt-2 w-full rounded-lg border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 outline-none transition focus:border-brand-500"
         />
       </div>
 
       {status === "error" ? (
-        <div className="rounded-xl border border-red-400/40 bg-red-500/10 px-4 py-3 text-sm text-red-100">
+        <div className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">
           {f.required}
         </div>
       ) : null}
       {status === "success" ? (
-        <div className="rounded-xl border border-emerald-400/40 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-100">
+        <div className="rounded-lg border border-brand-300 bg-brand-50 px-4 py-3 text-sm text-brand-800">
           {f.success}
         </div>
       ) : null}
 
       <button
         type="submit"
-        className="inline-flex items-center gap-2 rounded-full bg-brand-gradient bg-[length:200%_100%] px-7 py-3 text-sm font-semibold text-white shadow-glow transition hover:animate-shimmer"
+        className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3 text-sm font-semibold text-white transition hover:bg-brand-600"
       >
         {f.submit}
         <span aria-hidden>→</span>
@@ -85,9 +85,9 @@ function Label({
   required?: boolean;
 }) {
   return (
-    <label className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-200/70">
+    <label className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">
       {children}
-      {required ? <span className="ml-1 text-neon-pink">*</span> : null}
+      {required ? <span className="ml-1 text-brand-500">*</span> : null}
     </label>
   );
 }
@@ -109,7 +109,7 @@ function Field({
       <input
         type={type}
         name={name}
-        className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-ink-200/40 outline-none transition focus:border-neon-pink"
+        className="mt-2 w-full rounded-lg border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 outline-none transition focus:border-brand-500"
       />
     </div>
   );

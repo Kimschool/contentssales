@@ -10,22 +10,14 @@ export function PageHero({
   subtitle?: string;
 }) {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-28">
-      <div className="glow-spot left-[-150px] top-[-120px] bg-ink-600" />
-      <div className="glow-spot right-[-150px] top-[40px] bg-neon-pink" />
-      <div className="absolute inset-0 -z-10 hero-grid opacity-30" />
+    <section className="relative overflow-hidden bg-canvas-band py-16 sm:py-20">
       <Container>
-        {eyebrow ? (
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold tracking-[0.2em] text-ink-100">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-gradient" />
-            {eyebrow}
-          </div>
-        ) : null}
-        <h1 className="font-display text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-          <span className="text-gradient">{title}</span>
+        {eyebrow ? <div className="section-label">{eyebrow}</div> : null}
+        <h1 className="mt-4 font-display text-4xl font-black leading-tight tracking-tight text-ink-900 sm:text-5xl">
+          {title}
         </h1>
         {subtitle ? (
-          <p className="mt-5 max-w-2xl text-base text-ink-200/80 sm:text-lg">
+          <p className="mt-4 max-w-2xl text-base text-ink-500 sm:text-lg">
             {subtitle}
           </p>
         ) : null}

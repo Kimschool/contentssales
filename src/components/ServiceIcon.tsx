@@ -3,7 +3,7 @@ type Slug = "production" | "localization" | "planning" | "studio";
 export function ServiceIcon({ slug }: { slug: string }) {
   const key = (slug as Slug) ?? "production";
   return (
-    <div className="relative h-28 w-full overflow-hidden rounded-2xl">
+    <div className="relative h-28 w-full overflow-hidden rounded-xl bg-canvas-soft">
       <svg
         viewBox="0 0 320 140"
         className="h-full w-full"
@@ -11,17 +11,12 @@ export function ServiceIcon({ slug }: { slug: string }) {
         aria-hidden
       >
         <defs>
-          <linearGradient id={`svc-${key}`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#1a0b2e" />
-            <stop offset="55%" stopColor="#6d28d9" />
-            <stop offset="100%" stopColor="#ff3ea5" />
-          </linearGradient>
-          <pattern id={`svc-${key}-dot`} width="12" height="12" patternUnits="userSpaceOnUse">
-            <circle cx="1.5" cy="1.5" r="1" fill="white" fillOpacity="0.14" />
+          <pattern id={`svc-${key}-tone`} width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.9" fill="#156c91" fillOpacity="0.22" />
           </pattern>
         </defs>
-        <rect width="320" height="140" fill={`url(#svc-${key})`} />
-        <rect width="320" height="140" fill={`url(#svc-${key}-dot)`} />
+        <rect width="320" height="140" fill="#eaf7fb" />
+        <rect width="320" height="140" fill={`url(#svc-${key}-tone)`} />
 
         {key === "production" && <ProductionArt />}
         {key === "localization" && <LocalizationArt />}
@@ -34,24 +29,17 @@ export function ServiceIcon({ slug }: { slug: string }) {
 
 function ProductionArt() {
   return (
-    <g>
-      {/* comic panels */}
-      <g stroke="white" strokeWidth="2.5" fill="white" fillOpacity="0.1">
-        <rect x="30" y="22" width="80" height="48" rx="6" />
-        <rect x="30" y="78" width="80" height="40" rx="6" />
-        <rect x="118" y="22" width="54" height="96" rx="6" />
-        <rect x="180" y="22" width="110" height="42" rx="6" />
-        <rect x="180" y="72" width="110" height="46" rx="6" />
-      </g>
-      {/* face circle */}
-      <circle cx="145" cy="70" r="14" fill="white" opacity="0.85" />
-      {/* speech bubble */}
-      <g transform="translate(220 50)" fill="white">
-        <rect x="-20" y="-14" width="50" height="22" rx="8" opacity="0.85" />
-        <path d="M-10 8 L-14 16 L-4 8 Z" opacity="0.85" />
-        <circle cx="-8" cy="-3" r="1.5" fill="#6d28d9" />
-        <circle cx="0" cy="-3" r="1.5" fill="#6d28d9" />
-        <circle cx="8" cy="-3" r="1.5" fill="#6d28d9" />
+    <g stroke="#0f5473" strokeWidth="2" fill="#ffffff">
+      <rect x="30" y="22" width="80" height="48" rx="6" />
+      <rect x="30" y="78" width="80" height="40" rx="6" />
+      <rect x="118" y="22" width="54" height="96" rx="6" />
+      <rect x="180" y="22" width="110" height="42" rx="6" />
+      <rect x="180" y="72" width="110" height="46" rx="6" />
+      <circle cx="145" cy="70" r="13" fill="#1f86ad" stroke="none" />
+      <g transform="translate(225 45)" fill="#1f86ad" stroke="none">
+        <circle cx="-8" cy="0" r="2" />
+        <circle cx="0" cy="0" r="2" />
+        <circle cx="8" cy="0" r="2" />
       </g>
     </g>
   );
@@ -61,48 +49,32 @@ function LocalizationArt() {
   return (
     <g>
       {/* globe */}
-      <g transform="translate(80 70)">
-        <circle r="46" fill="white" opacity="0.15" />
-        <circle r="36" fill="white" opacity="0.1" stroke="white" strokeOpacity="0.6" strokeWidth="1.5" />
-        <ellipse rx="36" ry="14" fill="none" stroke="white" strokeOpacity="0.6" strokeWidth="1.5" />
-        <ellipse rx="36" ry="26" fill="none" stroke="white" strokeOpacity="0.5" strokeWidth="1.5" />
-        <line x1="-36" y1="0" x2="36" y2="0" stroke="white" strokeOpacity="0.6" strokeWidth="1.5" />
-        <line x1="0" y1="-36" x2="0" y2="36" stroke="white" strokeOpacity="0.6" strokeWidth="1.5" />
+      <g transform="translate(80 70)" stroke="#0f5473" strokeWidth="2" fill="none">
+        <circle r="42" fill="#ffffff" />
+        <ellipse rx="42" ry="16" />
+        <ellipse rx="42" ry="28" />
+        <line x1="-42" y1="0" x2="42" y2="0" />
+        <line x1="0" y1="-42" x2="0" y2="42" />
       </g>
       {/* language chips */}
-      <g fontFamily="Space Grotesk, sans-serif" fontWeight="800" fontSize="12" fill="#1a0b2e">
-        <g>
-          <rect x="160" y="34" width="40" height="22" rx="11" fill="white" opacity="0.95" />
-          <text x="180" y="49" textAnchor="middle">KO</text>
-        </g>
-        <g>
-          <rect x="210" y="34" width="40" height="22" rx="11" fill="#ffd1ea" />
-          <text x="230" y="49" textAnchor="middle">EN</text>
-        </g>
-        <g>
-          <rect x="260" y="34" width="40" height="22" rx="11" fill="white" opacity="0.95" />
-          <text x="280" y="49" textAnchor="middle">JP</text>
-        </g>
-        <g>
-          <rect x="160" y="64" width="40" height="22" rx="11" fill="#a78bfa" />
-          <text x="180" y="79" textAnchor="middle">ZH</text>
-        </g>
-        <g>
-          <rect x="210" y="64" width="40" height="22" rx="11" fill="white" opacity="0.9" />
-          <text x="230" y="79" textAnchor="middle">ES</text>
-        </g>
-        <g>
-          <rect x="260" y="64" width="40" height="22" rx="11" fill="#22d3ee" />
-          <text x="280" y="79" textAnchor="middle">FR</text>
-        </g>
-        <g>
-          <rect x="180" y="94" width="40" height="22" rx="11" fill="white" opacity="0.9" />
-          <text x="200" y="109" textAnchor="middle">DE</text>
-        </g>
-        <g>
-          <rect x="230" y="94" width="40" height="22" rx="11" fill="#ff3ea5" />
-          <text x="250" y="109" textAnchor="middle">TH</text>
-        </g>
+      <g fontFamily="Pretendard, sans-serif" fontWeight="800" fontSize="11" fill="#0f5473">
+        {[
+          { x: 160, y: 34, t: "KO" },
+          { x: 210, y: 34, t: "EN" },
+          { x: 260, y: 34, t: "JP" },
+          { x: 160, y: 64, t: "ZH" },
+          { x: 210, y: 64, t: "ES" },
+          { x: 260, y: 64, t: "FR" },
+          { x: 185, y: 94, t: "DE" },
+          { x: 235, y: 94, t: "TH" }
+        ].map((c) => (
+          <g key={c.t}>
+            <rect x={c.x} y={c.y} width="40" height="22" rx="11" fill="#ffffff" stroke="#1f86ad" strokeWidth="1.5" />
+            <text x={c.x + 20} y={c.y + 15} textAnchor="middle">
+              {c.t}
+            </text>
+          </g>
+        ))}
       </g>
     </g>
   );
@@ -110,61 +82,47 @@ function LocalizationArt() {
 
 function PlanningArt() {
   return (
-    <g>
-      {/* storyboard cards */}
-      <g transform="translate(40 30)">
-        <rect width="60" height="80" rx="6" fill="white" opacity="0.95" transform="rotate(-6)" />
-        <rect x="6" y="8" width="48" height="30" rx="3" fill="#6d28d9" />
-        <rect x="6" y="42" width="48" height="3" fill="#6d28d9" opacity="0.4" />
-        <rect x="6" y="48" width="40" height="3" fill="#6d28d9" opacity="0.4" />
-        <rect x="6" y="54" width="44" height="3" fill="#6d28d9" opacity="0.4" />
+    <g stroke="#0f5473" strokeWidth="2" strokeLinecap="round">
+      <g transform="translate(40 30)" fill="#ffffff">
+        <rect width="60" height="80" rx="6" transform="rotate(-6)" />
+        <rect x="6" y="8" width="48" height="30" rx="3" fill="#1f86ad" stroke="none" transform="rotate(-6)" />
       </g>
-      <g transform="translate(110 30)">
-        <rect width="60" height="80" rx="6" fill="white" opacity="0.95" transform="rotate(4)" />
-        <rect x="6" y="8" width="48" height="30" rx="3" fill="#ff3ea5" />
-        <rect x="6" y="42" width="48" height="3" fill="#6d28d9" opacity="0.4" />
-        <rect x="6" y="48" width="40" height="3" fill="#6d28d9" opacity="0.4" />
-        <rect x="6" y="54" width="44" height="3" fill="#6d28d9" opacity="0.4" />
+      <g transform="translate(110 30)" fill="#ffffff">
+        <rect width="60" height="80" rx="6" transform="rotate(4)" />
+        <rect x="6" y="8" width="48" height="30" rx="3" fill="#1f86ad" stroke="none" transform="rotate(4)" />
       </g>
-      <g transform="translate(180 30)">
-        <rect width="60" height="80" rx="6" fill="white" opacity="0.95" transform="rotate(-2)" />
-        <rect x="6" y="8" width="48" height="30" rx="3" fill="#3b82f6" />
-        <rect x="6" y="42" width="48" height="3" fill="#6d28d9" opacity="0.4" />
-        <rect x="6" y="48" width="40" height="3" fill="#6d28d9" opacity="0.4" />
-        <rect x="6" y="54" width="44" height="3" fill="#6d28d9" opacity="0.4" />
+      <g transform="translate(180 30)" fill="#ffffff">
+        <rect width="60" height="80" rx="6" transform="rotate(-2)" />
+        <rect x="6" y="8" width="48" height="30" rx="3" fill="#1f86ad" stroke="none" transform="rotate(-2)" />
       </g>
-      {/* arrow + pin */}
-      <g transform="translate(260 70)" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round">
+      <g transform="translate(260 70)" fill="none">
         <path d="M -10 0 L 30 0" />
         <path d="M 20 -8 L 30 0 L 20 8" />
       </g>
-      <circle cx="300" cy="70" r="10" fill="#ffd1ea" stroke="white" strokeWidth="2" />
+      <circle cx="300" cy="70" r="8" fill="#1f86ad" stroke="#0f5473" strokeWidth="1.5" />
     </g>
   );
 }
 
 function StudioArt() {
   return (
-    <g>
-      {/* monitor */}
+    <g stroke="#0f5473" strokeWidth="2">
       <g transform="translate(40 30)">
-        <rect width="140" height="80" rx="6" fill="#1a0b2e" stroke="white" strokeWidth="2" />
-        <rect x="8" y="8" width="124" height="64" rx="3" fill="white" opacity="0.15" />
-        <rect x="16" y="18" width="60" height="12" rx="2" fill="#ff3ea5" />
-        <rect x="16" y="34" width="100" height="4" rx="2" fill="white" opacity="0.5" />
-        <rect x="16" y="42" width="80" height="4" rx="2" fill="white" opacity="0.5" />
-        <rect x="16" y="50" width="90" height="4" rx="2" fill="white" opacity="0.5" />
-        <rect x="60" y="80" width="20" height="10" fill="white" opacity="0.4" />
+        <rect width="140" height="80" rx="6" fill="#ffffff" />
+        <rect x="8" y="8" width="124" height="64" rx="3" fill="#eaf7fb" stroke="none" />
+        <rect x="16" y="18" width="50" height="10" rx="2" fill="#1f86ad" stroke="none" />
+        <rect x="16" y="34" width="100" height="3" fill="#1f86ad" stroke="none" opacity="0.6" />
+        <rect x="16" y="42" width="80" height="3" fill="#1f86ad" stroke="none" opacity="0.6" />
+        <rect x="16" y="50" width="90" height="3" fill="#1f86ad" stroke="none" opacity="0.6" />
+        <rect x="60" y="80" width="20" height="8" fill="#ffffff" />
       </g>
-      {/* tablet + pen */}
       <g transform="translate(200 40)">
-        <rect width="80" height="60" rx="6" fill="white" opacity="0.95" />
-        <path d="M 10 50 Q 30 20 50 45 T 70 40" stroke="#6d28d9" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-        {/* pen */}
-        <g transform="translate(90 -10) rotate(20)" stroke="white" strokeWidth="2" fill="#1a0b2e">
+        <rect width="80" height="60" rx="6" fill="#ffffff" />
+        <path d="M 10 50 Q 30 20 50 45 T 70 40" stroke="#1f86ad" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+        <g transform="translate(90 -10) rotate(20)" fill="#ffffff">
           <rect x="0" y="0" width="6" height="48" rx="2" />
           <polygon points="0,48 3,58 6,48" />
-          <rect x="0" y="10" width="6" height="3" fill="#ff3ea5" />
+          <rect x="0" y="10" width="6" height="3" fill="#1f86ad" stroke="none" />
         </g>
       </g>
     </g>
