@@ -5,35 +5,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // 단일 브랜드 컬러 — 위버스 물색(aqua/sky)
+        // 단일 브랜드 컬러 — 옐로우 (warm yellow)
         brand: {
-          50: "#eaf7fb",
-          100: "#d0ecf4",
-          200: "#a5d9e9",
-          300: "#72bfd8",
-          400: "#45a3c5",
-          500: "#1f86ad",
-          600: "#156c91",
-          700: "#0f5473",
-          800: "#0b3d55",
-          900: "#082a3b"
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#facc15", // main — hero / CTA 배경
+          600: "#eab308",
+          700: "#ca8a04",
+          800: "#a16207",
+          900: "#713f12"
         },
         ink: {
-          50: "#f7f9fb",
-          100: "#eef2f6",
-          200: "#dde4ec",
-          300: "#b9c5d2",
-          400: "#8596a8",
-          500: "#5a6b7d",
-          600: "#3d4b5c",
-          700: "#273140",
-          800: "#172030",
-          900: "#0c141f"
+          50: "#f7f8f9",
+          100: "#eef0f3",
+          200: "#dde1e7",
+          300: "#b9c0ca",
+          400: "#858d9a",
+          500: "#5a6370",
+          600: "#3d4552",
+          700: "#272d38",
+          800: "#171c25",
+          900: "#0b1019"
         },
         canvas: {
           DEFAULT: "#ffffff",
-          soft: "#f5f8fa",
-          band: "#eef4f7"
+          soft: "#fafaf7",
+          band: "#fff8e1"
         }
       },
       fontFamily: {
@@ -53,8 +53,8 @@ const config: Config = {
         ]
       },
       boxShadow: {
-        card: "0 1px 2px rgba(12, 20, 31, 0.04), 0 4px 12px rgba(12, 20, 31, 0.06)",
-        hover: "0 2px 4px rgba(12, 20, 31, 0.06), 0 10px 30px rgba(31, 134, 173, 0.15)"
+        card: "0 1px 2px rgba(11, 16, 25, 0.04), 0 4px 12px rgba(11, 16, 25, 0.06)",
+        hover: "0 2px 4px rgba(11, 16, 25, 0.06), 0 10px 30px rgba(250, 204, 21, 0.28)"
       }
     }
   },

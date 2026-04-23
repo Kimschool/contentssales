@@ -10,7 +10,7 @@
 html,
 body {
   background: #ffffff;
-  color: #172030;
+  color: #171c25;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -21,8 +21,8 @@ body {
 }
 
 ::selection {
-  background: #d0ecf4;
-  color: #082a3b;
+  background: #fef3c7;
+  color: #713f12;
 }
 
 .section-label {
@@ -31,8 +31,8 @@ body {
   gap: 0.5rem;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  background: #eaf7fb;
-  color: #0f5473;
+  background: #fffbeb;
+  color: #a16207;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -44,7 +44,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 9999px;
-  background: #1f86ad;
+  background: #facc15;
 }
 
 .divider-label {
@@ -52,7 +52,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: #0f5473;
+  color: #a16207;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -64,5 +64,5 @@ body {
   flex: 1;
   max-width: 180px;
   height: 1px;
-  background: #dde4ec;
+  background: #dde1e7;
 }

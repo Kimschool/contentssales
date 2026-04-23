@@ -44,14 +44,14 @@ export default async function ContactPage({
                 </div>
               ))}
 
-              <div className="rounded-2xl bg-brand-500 p-6 text-white">
+              <div className="rounded-2xl bg-brand-500 p-6 text-ink-900">
                 <div className="text-[11px] font-semibold tracking-[0.22em] opacity-80">
                   RESPONSE TIME
                 </div>
                 <div className="mt-2 font-display text-2xl font-black">
                   &lt; 2 business days
                 </div>
-                <p className="mt-2 text-sm text-white/85">
+                <p className="mt-2 text-sm text-ink-800">
                   {locale === "ko"
                     ? "영업일 기준 2일 이내 답변드립니다."
                     : locale === "ja"

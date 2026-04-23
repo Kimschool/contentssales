@@ -18,7 +18,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8 lg:px-12">
         <Link href={base} className="flex items-center gap-3">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand-500">
-            <span className="font-display text-sm font-black text-white">W</span>
+            <span className="font-display text-sm font-black text-ink-900">W</span>
           </span>
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-display text-sm font-bold tracking-[0.18em] text-ink-900">
@@ -35,7 +35,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-ink-600 transition hover:text-brand-600"
+              className="text-sm font-medium text-ink-600 transition hover:text-brand-700"
             >
               {item.label}
             </Link>
@@ -46,7 +46,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <LanguageSwitcher current={locale} />
           <Link
             href={`${base}/contact`}
-            className="hidden rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-600 sm:inline-block"
+            className="hidden rounded-full bg-ink-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-ink-800 sm:inline-block"
           >
             {dict.nav.cta}
           </Link>

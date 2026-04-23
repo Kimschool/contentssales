@@ -11,7 +11,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <div>
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-lg bg-brand-500">
-                <span className="font-display text-base font-black text-white">W</span>
+                <span className="font-display text-base font-black text-ink-900">W</span>
               </span>
               <div className="leading-tight">
                 <div className="font-display text-sm font-bold tracking-[0.18em] text-white">

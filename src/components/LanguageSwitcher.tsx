@@ -21,7 +21,7 @@ export function LanguageSwitcher({ current }: { current: Locale }) {
             className={
               "rounded-full px-3 py-1 transition " +
               (active
-                ? "bg-brand-500 text-white"
+                ? "bg-brand-500 text-ink-900"
                 : "text-ink-500 hover:text-ink-900")
             }
           >
