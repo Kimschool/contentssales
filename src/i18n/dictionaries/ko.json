@@ -1,0 +1,195 @@
+{
+  "brand": {
+    "name": "WEVERSE CONTENT",
+    "tagline": "컨텐츠부 영업팀"
+  },
+  "nav": {
+    "home": "홈",
+    "services": "서비스",
+    "portfolio": "포트폴리오",
+    "about": "회사 소개",
+    "contact": "문의하기",
+    "cta": "제작 문의"
+  },
+  "hero": {
+    "eyebrow": "WEBTOON PRODUCTION · GLOBAL LOCALIZATION",
+    "title": "팬덤의 스토리를\n세계의 언어로.",
+    "subtitle": "K-컬처 팬덤을 가장 깊이 이해하는 팀이 기획부터 연재, 다국어 로컬라이징까지 원스톱으로 제공합니다.",
+    "ctaPrimary": "제작 상담하기",
+    "ctaSecondary": "서비스 살펴보기",
+    "stats": [
+      { "value": "120+", "label": "연간 제작 에피소드" },
+      { "value": "14개국", "label": "로컬라이징 언어" },
+      { "value": "32", "label": "파트너 스튜디오" }
+    ]
+  },
+  "strengths": {
+    "eyebrow": "3 STRENGTHS",
+    "title": "컨텐츠부 영업팀만의 강점",
+    "items": [
+      {
+        "no": "01",
+        "title": "장르 다변화",
+        "desc": "로맨스, 판타지, 액션, BL, 일상 등 전 장르 제작 경험을 바탕으로 IP에 가장 적합한 포맷을 제안합니다."
+      },
+      {
+        "no": "02",
+        "title": "원스톱 프로덕션",
+        "desc": "기획 · 스토리 · 작화 · 채색 · 편집 · 로컬라이징 · 연재까지 한 팀에서 완결합니다."
+      },
+      {
+        "no": "03",
+        "title": "공정 단위 계약",
+        "desc": "풀 프로덕션이 아니어도 원고 각색, 채색, 번역만 단일 공정으로도 계약 가능합니다."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "SERVICES",
+    "title": "제공 서비스",
+    "subtitle": "웹툰 제작과 글로벌 로컬라이징을 중심으로, 팬덤 IP를 가장 빠르고 안정적으로 연재 단계까지 이끌어냅니다.",
+    "items": [
+      {
+        "slug": "production",
+        "tag": "WEBTOON PRODUCTION",
+        "title": "웹툰 제작",
+        "desc": "팬덤 IP · 아이돌 세계관 · 오리지널 스토리를 웹툰으로 완성하는 풀 프로덕션.",
+        "points": [
+          "기획 · 시나리오 · 콘티",
+          "분업 스튜디오 운영",
+          "연재 플랫폼 론칭 지원"
+        ]
+      },
+      {
+        "slug": "localization",
+        "tag": "LOCALIZATION",
+        "title": "웹툰 로컬라이징",
+        "desc": "14개 언어 네이티브 번역 · 식자 · QA · 플랫폼 포맷 대응까지 원스톱.",
+        "points": [
+          "전문 번역 + 감수 2단계",
+          "식자/리터칭 · 효과음 현지화",
+          "웹툰·망가·웹코믹 포맷 지원"
+        ]
+      },
+      {
+        "slug": "planning",
+        "tag": "PLANNING",
+        "title": "IP 기획 / 편집",
+        "desc": "아티스트 세계관·팬덤 코어를 분석해 연재용 스토리 라인을 설계합니다.",
+        "points": [
+          "팬덤 리서치 · 컨셉 보드",
+          "시즌제 연재 기획",
+          "스핀오프 / 2차 창작"
+        ]
+      },
+      {
+        "slug": "studio",
+        "tag": "STUDIO",
+        "title": "스튜디오 운영",
+        "desc": "분업제 스튜디오 구축부터 작가 매칭, 품질 관리까지.",
+        "points": [
+          "스튜디오 셋업 컨설팅",
+          "작가 리쿠르팅 / 매칭",
+          "품질 QA 프로세스"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "PORTFOLIO",
+    "title": "대표 작품",
+    "subtitle": "글로벌 팬덤을 사로잡은 연재작을 소개합니다.",
+    "viewAll": "전체 작품 보기",
+    "items": [
+      {
+        "title": "MIDNIGHT STAGE",
+        "genre": "로맨스 · 판타지",
+        "platform": "글로벌 4개 플랫폼 연재",
+        "badge": "TOP 10"
+      },
+      {
+        "title": "ECHO OF YOU",
+        "genre": "아이돌 · 드라마",
+        "platform": "북미/유럽 로컬라이징",
+        "badge": "NEW"
+      },
+      {
+        "title": "VILLAINESS NOTE",
+        "genre": "빙의 · 로맨스",
+        "platform": "일본·대만 동시 연재",
+        "badge": "HIT"
+      },
+      {
+        "title": "NEON HEART",
+        "genre": "청춘 · 음악",
+        "platform": "6개국 로컬라이징",
+        "badge": "ONGOING"
+      }
+    ]
+  },
+  "cta": {
+    "title": "IP 하나로, 세계의 팬덤을 만나다.",
+    "subtitle": "컨텐츠부 영업팀과 함께 글로벌 런칭 전략을 설계해 보세요.",
+    "button": "지금 문의하기"
+  },
+  "servicesPage": {
+    "title": "서비스",
+    "subtitle": "웹툰 제작과 글로벌 로컬라이징을 중심으로 완성도 높은 프로덕션을 제공합니다.",
+    "processTitle": "프로덕션 프로세스",
+    "processSubtitle": "기획에서 연재까지 하나의 파이프라인으로 관리됩니다.",
+    "process": [
+      { "no": "STEP 01", "title": "킥오프 / 팬덤 리서치", "desc": "IP 분석, 레퍼런스 수집, 타깃 팬덤 인사이트 도출" },
+      { "no": "STEP 02", "title": "기획 & 시나리오", "desc": "시즌제 연재 구성, 회차 비트, 핵심 씬 설계" },
+      { "no": "STEP 03", "title": "작화 / 채색", "desc": "분업 스튜디오에서 콘티-펜선-채색 동시 진행" },
+      { "no": "STEP 04", "title": "로컬라이징 / 식자", "desc": "14개 언어 네이티브 번역 + 식자·리터칭" },
+      { "no": "STEP 05", "title": "연재 / 운영", "desc": "플랫폼 론칭, 프로모션, 팬덤 반응 트래킹" }
+    ]
+  },
+  "portfolioPage": {
+    "title": "포트폴리오",
+    "subtitle": "글로벌 시장에서 검증된 팬덤 IP 라인업."
+  },
+  "aboutPage": {
+    "title": "회사 소개",
+    "subtitle": "위버스 컨텐츠부 영업팀은 K-컬처 팬덤과 가장 가까이 있는 콘텐츠 메이커입니다.",
+    "missionTitle": "Mission",
+    "mission": "팬덤의 목소리를 이야기로, 이야기를 세계의 언어로 연결합니다.",
+    "visionTitle": "Vision",
+    "vision": "아티스트의 세계관을 글로벌 웹툰·스토리 IP로 확장하는 글로벌 No.1 팬덤 컨텐츠 스튜디오.",
+    "info": [
+      { "label": "Team", "value": "기획·에디터·로컬라이저 36명" },
+      { "label": "Partners", "value": "32개 스튜디오 / 8개 플랫폼" },
+      { "label": "Coverage", "value": "한국 · 일본 · 북미 · 유럽 · 동남아" }
+    ]
+  },
+  "contactPage": {
+    "title": "문의하기",
+    "subtitle": "IP 제작, 로컬라이징, 제휴 문의를 남겨주시면 영업일 기준 2일 이내 답변드립니다.",
+    "form": {
+      "company": "회사 / 팀명",
+      "name": "담당자명",
+      "email": "이메일",
+      "phone": "연락처",
+      "category": "문의 유형",
+      "categories": ["웹툰 제작", "로컬라이징", "IP 기획", "제휴 / 기타"],
+      "message": "문의 내용",
+      "messagePlaceholder": "프로젝트 개요, 일정, 예산 등을 적어주세요.",
+      "submit": "문의 보내기",
+      "success": "문의가 접수되었습니다. 영업일 2일 이내 회신드리겠습니다.",
+      "required": "필수 항목을 확인해주세요."
+    },
+    "info": [
+      { "label": "Email", "value": "contents.sales@weverse.example" },
+      { "label": "Hours", "value": "평일 10:00 - 19:00 (KST)" },
+      { "label": "Address", "value": "서울시 용산구 한강대로 100" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 WEVERSE CONTENT SALES. All rights reserved.",
+    "links": {
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관",
+      "contact": "문의하기"
+    }
+  }
+}

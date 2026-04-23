@@ -1,0 +1,195 @@
+{
+  "brand": {
+    "name": "WEVERSE CONTENT",
+    "tagline": "コンテンツ部 営業チーム"
+  },
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "portfolio": "ポートフォリオ",
+    "about": "会社紹介",
+    "contact": "お問い合わせ",
+    "cta": "制作のご相談"
+  },
+  "hero": {
+    "eyebrow": "WEBTOON PRODUCTION · GLOBAL LOCALIZATION",
+    "title": "ファンダムの物語を、\n世界のことばで。",
+    "subtitle": "K-カルチャーのファンダムを誰より理解するチームが、企画から連載・多言語ローカライズまでワンストップでお届けします。",
+    "ctaPrimary": "制作のご相談",
+    "ctaSecondary": "サービスを見る",
+    "stats": [
+      { "value": "120+", "label": "年間制作エピソード" },
+      { "value": "14言語", "label": "ローカライズ対応" },
+      { "value": "32", "label": "パートナースタジオ" }
+    ]
+  },
+  "strengths": {
+    "eyebrow": "3 STRENGTHS",
+    "title": "コンテンツ部 営業チームの強み",
+    "items": [
+      {
+        "no": "01",
+        "title": "ジャンル対応力",
+        "desc": "恋愛・ファンタジー・アクション・BL・日常など、あらゆるジャンルの制作経験からIPに最適なフォーマットをご提案します。"
+      },
+      {
+        "no": "02",
+        "title": "ワンストップ制作",
+        "desc": "企画・シナリオ・作画・彩色・編集・ローカライズ・連載まで、1つのチームで完結します。"
+      },
+      {
+        "no": "03",
+        "title": "工程単位の契約",
+        "desc": "フルプロダクションでなくても、原作脚色・彩色・翻訳など単一工程のみのご契約も可能です。"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "SERVICES",
+    "title": "ご提供サービス",
+    "subtitle": "ウェブトゥーン制作とグローバルローカライズを軸に、ファンダムIPを素早く、安定して連載段階までお届けします。",
+    "items": [
+      {
+        "slug": "production",
+        "tag": "WEBTOON PRODUCTION",
+        "title": "ウェブトゥーン制作",
+        "desc": "ファンダムIP・アーティスト世界観・オリジナル作品をウェブトゥーンとして仕上げるフルプロダクション。",
+        "points": [
+          "企画・シナリオ・ネーム",
+          "分業スタジオ運営",
+          "連載プラットフォームへのローンチ支援"
+        ]
+      },
+      {
+        "slug": "localization",
+        "tag": "LOCALIZATION",
+        "title": "ウェブトゥーンローカライズ",
+        "desc": "14言語ネイティブ翻訳・写植・QA・プラットフォームフォーマット対応までワンストップ。",
+        "points": [
+          "翻訳+ネイティブ監修の2段階",
+          "写植・リタッチ・効果音ローカライズ",
+          "ウェブトゥーン/マンガ/ウェブコミック対応"
+        ]
+      },
+      {
+        "slug": "planning",
+        "tag": "PLANNING",
+        "title": "IP企画 / 編集",
+        "desc": "アーティスト世界観とファンダムの核を分析し、連載用ストーリーラインを設計します。",
+        "points": [
+          "ファンダムリサーチ・コンセプトボード",
+          "シーズン制連載企画",
+          "スピンオフ・二次創作"
+        ]
+      },
+      {
+        "slug": "studio",
+        "tag": "STUDIO",
+        "title": "スタジオ運営",
+        "desc": "分業制スタジオの構築から作家マッチング、品質管理まで。",
+        "points": [
+          "スタジオ立ち上げコンサル",
+          "作家リクルーティング・マッチング",
+          "品質QAプロセス"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "PORTFOLIO",
+    "title": "代表作",
+    "subtitle": "グローバルなファンダムを魅了した連載作品をご紹介します。",
+    "viewAll": "すべての作品を見る",
+    "items": [
+      {
+        "title": "MIDNIGHT STAGE",
+        "genre": "恋愛・ファンタジー",
+        "platform": "グローバル4プラットフォーム連載",
+        "badge": "TOP 10"
+      },
+      {
+        "title": "ECHO OF YOU",
+        "genre": "アイドル・ドラマ",
+        "platform": "北米・欧州ローカライズ",
+        "badge": "NEW"
+      },
+      {
+        "title": "VILLAINESS NOTE",
+        "genre": "憑依・恋愛",
+        "platform": "日本・台湾同時連載",
+        "badge": "HIT"
+      },
+      {
+        "title": "NEON HEART",
+        "genre": "青春・音楽",
+        "platform": "6か国ローカライズ",
+        "badge": "ONGOING"
+      }
+    ]
+  },
+  "cta": {
+    "title": "一つのIPで、世界のファンダムへ。",
+    "subtitle": "コンテンツ部 営業チームと一緒にグローバルローンチを設計しましょう。",
+    "button": "お問い合わせ"
+  },
+  "servicesPage": {
+    "title": "サービス",
+    "subtitle": "ウェブトゥーン制作とグローバルローカライズを軸にハイクオリティなプロダクションを提供します。",
+    "processTitle": "制作プロセス",
+    "processSubtitle": "企画から連載まで、一つのパイプラインで管理されます。",
+    "process": [
+      { "no": "STEP 01", "title": "キックオフ / ファンダムリサーチ", "desc": "IP分析、リファレンス収集、ターゲットファンダムのインサイト抽出" },
+      { "no": "STEP 02", "title": "企画・シナリオ", "desc": "シーズン構成、エピソードビート、キーシーン設計" },
+      { "no": "STEP 03", "title": "作画 / 彩色", "desc": "分業スタジオでネーム・線画・彩色を同時進行" },
+      { "no": "STEP 04", "title": "ローカライズ / 写植", "desc": "14言語ネイティブ翻訳+写植・リタッチ" },
+      { "no": "STEP 05", "title": "連載 / 運営", "desc": "プラットフォームローンチ、プロモーション、ファンダム反応のトラッキング" }
+    ]
+  },
+  "portfolioPage": {
+    "title": "ポートフォリオ",
+    "subtitle": "グローバル市場で検証されたファンダムIPラインナップ。"
+  },
+  "aboutPage": {
+    "title": "会社紹介",
+    "subtitle": "Weverse コンテンツ部 営業チームは、K-カルチャーのファンダムに最も近いコンテンツメイカーです。",
+    "missionTitle": "Mission",
+    "mission": "ファンダムの声を物語に、物語を世界のことばに。",
+    "visionTitle": "Vision",
+    "vision": "アーティストの世界観をグローバルウェブトゥーン・ストーリーIPへ拡張する、世界No.1のファンダムコンテンツスタジオ。",
+    "info": [
+      { "label": "Team", "value": "企画・編集・ローカライザー36名" },
+      { "label": "Partners", "value": "32スタジオ / 8プラットフォーム" },
+      { "label": "Coverage", "value": "韓国・日本・北米・欧州・東南アジア" }
+    ]
+  },
+  "contactPage": {
+    "title": "お問い合わせ",
+    "subtitle": "IP制作・ローカライズ・提携のご相談は、営業日2日以内にご回答いたします。",
+    "form": {
+      "company": "会社 / チーム名",
+      "name": "ご担当者名",
+      "email": "メール",
+      "phone": "電話番号",
+      "category": "お問い合わせ種別",
+      "categories": ["ウェブトゥーン制作", "ローカライズ", "IP企画", "提携 / その他"],
+      "message": "お問い合わせ内容",
+      "messagePlaceholder": "プロジェクト概要、スケジュール、予算などをご記入ください。",
+      "submit": "送信する",
+      "success": "お問い合わせを受け付けました。営業日2日以内にご連絡いたします。",
+      "required": "必須項目をご確認ください。"
+    },
+    "info": [
+      { "label": "Email", "value": "contents.sales@weverse.example" },
+      { "label": "Hours", "value": "平日 10:00 - 19:00 (KST)" },
+      { "label": "Address", "value": "ソウル市龍山区漢江大路100" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 WEVERSE CONTENT SALES. All rights reserved.",
+    "links": {
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "contact": "お問い合わせ"
+    }
+  }
+}

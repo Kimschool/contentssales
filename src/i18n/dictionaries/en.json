@@ -1,0 +1,195 @@
+{
+  "brand": {
+    "name": "WEVERSE CONTENT",
+    "tagline": "Content Sales Team"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "eyebrow": "WEBTOON PRODUCTION · GLOBAL LOCALIZATION",
+    "title": "Fandom stories,\nin every language.",
+    "subtitle": "From concept to serialization and multilingual localization, our team knows K-culture fandom inside-out — and delivers end-to-end.",
+    "ctaPrimary": "Start a Project",
+    "ctaSecondary": "See Services",
+    "stats": [
+      { "value": "120+", "label": "Episodes produced / year" },
+      { "value": "14", "label": "Languages localized" },
+      { "value": "32", "label": "Partner studios" }
+    ]
+  },
+  "strengths": {
+    "eyebrow": "3 STRENGTHS",
+    "title": "Why the Content Sales Team",
+    "items": [
+      {
+        "no": "01",
+        "title": "Genre versatility",
+        "desc": "Romance, fantasy, action, BL, slice-of-life — we propose the right format for every IP."
+      },
+      {
+        "no": "02",
+        "title": "One-stop production",
+        "desc": "Planning, story, art, coloring, editing, localization, and distribution — all under one roof."
+      },
+      {
+        "no": "03",
+        "title": "Per-process contracts",
+        "desc": "Don't need full production? You can contract a single process — script, color, or translation alone."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "SERVICES",
+    "title": "What we offer",
+    "subtitle": "Centered on webtoon production and global localization, we take fandom IP from concept to live serialization with speed and reliability.",
+    "items": [
+      {
+        "slug": "production",
+        "tag": "WEBTOON PRODUCTION",
+        "title": "Webtoon Production",
+        "desc": "Full production turning fandom IP, artist universes, and original stories into complete webtoons.",
+        "points": [
+          "Planning · script · storyboard",
+          "Division-of-labor studio ops",
+          "Platform launch support"
+        ]
+      },
+      {
+        "slug": "localization",
+        "tag": "LOCALIZATION",
+        "title": "Webtoon Localization",
+        "desc": "14 languages — native translation, typesetting, QA, platform formatting — all in one pipeline.",
+        "points": [
+          "Translation + native review",
+          "Typesetting / SFX localization",
+          "Webtoon · manga · webcomic formats"
+        ]
+      },
+      {
+        "slug": "planning",
+        "tag": "PLANNING",
+        "title": "IP Planning / Editing",
+        "desc": "We decode the artist universe and fandom core, then design a serialized story line.",
+        "points": [
+          "Fandom research · concept boards",
+          "Season-based serialization",
+          "Spin-offs / derivative works"
+        ]
+      },
+      {
+        "slug": "studio",
+        "tag": "STUDIO",
+        "title": "Studio Operations",
+        "desc": "From studio setup to artist matching and quality control.",
+        "points": [
+          "Studio setup consulting",
+          "Artist recruiting / matching",
+          "Quality assurance process"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "PORTFOLIO",
+    "title": "Featured works",
+    "subtitle": "Series that captured global fandoms.",
+    "viewAll": "View all works",
+    "items": [
+      {
+        "title": "MIDNIGHT STAGE",
+        "genre": "Romance · Fantasy",
+        "platform": "Serialized on 4 global platforms",
+        "badge": "TOP 10"
+      },
+      {
+        "title": "ECHO OF YOU",
+        "genre": "Idol · Drama",
+        "platform": "Localized for NA / EU",
+        "badge": "NEW"
+      },
+      {
+        "title": "VILLAINESS NOTE",
+        "genre": "Isekai · Romance",
+        "platform": "Simulcast JP / TW",
+        "badge": "HIT"
+      },
+      {
+        "title": "NEON HEART",
+        "genre": "Youth · Music",
+        "platform": "Localized in 6 countries",
+        "badge": "ONGOING"
+      }
+    ]
+  },
+  "cta": {
+    "title": "One IP. A global fandom.",
+    "subtitle": "Let's design your global launch with the Content Sales Team.",
+    "button": "Contact us"
+  },
+  "servicesPage": {
+    "title": "Services",
+    "subtitle": "Anchored on webtoon production and global localization, delivered end-to-end.",
+    "processTitle": "Production Process",
+    "processSubtitle": "From concept to serialization — one managed pipeline.",
+    "process": [
+      { "no": "STEP 01", "title": "Kickoff / Fandom Research", "desc": "IP analysis, references, and fandom insights" },
+      { "no": "STEP 02", "title": "Planning & Script", "desc": "Season structure, episode beats, key-scene design" },
+      { "no": "STEP 03", "title": "Art / Coloring", "desc": "Parallel storyboard, lineart, and color in partner studios" },
+      { "no": "STEP 04", "title": "Localization / Typesetting", "desc": "14-language native translation with typesetting & retouch" },
+      { "no": "STEP 05", "title": "Serialization / Ops", "desc": "Platform launch, promotion, fandom tracking" }
+    ]
+  },
+  "portfolioPage": {
+    "title": "Portfolio",
+    "subtitle": "A lineup of fandom IP proven in global markets."
+  },
+  "aboutPage": {
+    "title": "About",
+    "subtitle": "Weverse Content Sales Team is the content maker closest to K-culture fandoms.",
+    "missionTitle": "Mission",
+    "mission": "Turn fandom voices into stories, and stories into every language.",
+    "visionTitle": "Vision",
+    "vision": "The global No.1 fandom content studio — expanding artist universes into webtoon and story IP worldwide.",
+    "info": [
+      { "label": "Team", "value": "36 planners · editors · localizers" },
+      { "label": "Partners", "value": "32 studios / 8 platforms" },
+      { "label": "Coverage", "value": "Korea · Japan · NA · EU · SEA" }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Share your project for webtoon production, localization, or partnership — we reply within 2 business days.",
+    "form": {
+      "company": "Company / Team",
+      "name": "Your name",
+      "email": "Email",
+      "phone": "Phone",
+      "category": "Inquiry type",
+      "categories": ["Webtoon production", "Localization", "IP planning", "Partnership / Other"],
+      "message": "Message",
+      "messagePlaceholder": "Project outline, timeline, budget, etc.",
+      "submit": "Send inquiry",
+      "success": "Thanks — we'll get back to you within 2 business days.",
+      "required": "Please check the required fields."
+    },
+    "info": [
+      { "label": "Email", "value": "contents.sales@weverse.example" },
+      { "label": "Hours", "value": "Weekdays 10:00 - 19:00 (KST)" },
+      { "label": "Address", "value": "100 Hangang-daero, Yongsan-gu, Seoul" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 WEVERSE CONTENT SALES. All rights reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "contact": "Contact"
+    }
+  }
+}
