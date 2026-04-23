@@ -34,7 +34,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <Container className="relative">
         {/* top micro-label row */}
         <div className="flex items-center justify-between pt-8 text-[11px] font-bold tracking-[0.3em] text-ink-900/75">
-          <span>WEAVUS · CONTENTS SALES</span>
+          <span>WEAVUS · CONTENTS</span>
           <span className="hidden sm:inline">ISSUE No.01 / 2026</span>
         </div>
 

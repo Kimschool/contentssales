@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "WEAVUS CONTENT",
-    "tagline": "컨텐츠부 영업팀"
+    "tagline": "WEAVUS 콘텐츠"
   },
   "nav": {
     "home": "홈",
@@ -25,7 +25,7 @@
   },
   "strengths": {
     "eyebrow": "3 STRENGTHS",
-    "title": "컨텐츠부 영업팀만의 강점",
+    "title": "WEAVUS 콘텐츠만의 강점",
     "items": [
       {
         "no": "01",
@@ -129,7 +129,7 @@
   },
   "cta": {
     "title": "IP 하나로, 세계의 팬덤을 만나다.",
-    "subtitle": "컨텐츠부 영업팀과 함께 글로벌 런칭 전략을 설계해 보세요.",
+    "subtitle": "WEAVUS 콘텐츠와 함께 글로벌 런칭 전략을 설계해 보세요.",
     "button": "지금 문의하기"
   },
   "servicesPage": {
@@ -151,7 +151,7 @@
   },
   "aboutPage": {
     "title": "회사 소개",
-    "subtitle": "WEAVUS 컨텐츠부 영업팀은 K-컬처 팬덤과 가장 가까이 있는 콘텐츠 메이커입니다.",
+    "subtitle": "WEAVUS 콘텐츠는 K-컬처 팬덤과 가장 가까이 있는 콘텐츠 메이커입니다.",
     "missionTitle": "Mission",
     "mission": "팬덤의 목소리를 이야기로, 이야기를 세계의 언어로 연결합니다.",
     "visionTitle": "Vision",
@@ -179,13 +179,20 @@
       "required": "필수 항목을 확인해주세요."
     },
     "info": [
-      { "label": "Email", "value": "contents.sales@weavus.example" },
-      { "label": "Hours", "value": "평일 10:00 - 19:00 (KST)" },
-      { "label": "Address", "value": "서울시 용산구 한강대로 100" }
+      { "label": "Email", "value": "info@weavus.co.jp" },
+      { "label": "Hours", "value": "평일 10:00 - 19:00 (JST)" },
+      { "label": "Address", "value": "〒160-0022 도쿄도 신주쿠구 신주쿠 1-19-10 산몰 크레스트 205호" }
     ]
   },
   "footer": {
-    "copyright": "© 2026 WEAVUS CONTENT SALES. All rights reserved.",
+    "copyright": "© 2026 株式会社 WEAVUS. All rights reserved.",
+    "companyHeading": "COMPANY",
+    "company": [
+      { "label": "회사명", "value": "株式会社 WEAVUS" },
+      { "label": "대표이사", "value": "모리 료타" },
+      { "label": "설립", "value": "2015년 1월 16일" },
+      { "label": "소재지", "value": "〒160-0022 도쿄도 신주쿠구 신주쿠 1-19-10 산몰 크레스트 205호" }
+    ],
     "links": {
       "privacy": "개인정보처리방침",
       "terms": "이용약관",

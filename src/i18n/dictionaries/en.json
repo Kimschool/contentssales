@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "WEAVUS CONTENT",
-    "tagline": "Content Sales Team"
+    "tagline": "WEAVUS CONTENT"
   },
   "nav": {
     "home": "Home",
@@ -25,7 +25,7 @@
   },
   "strengths": {
     "eyebrow": "3 STRENGTHS",
-    "title": "Why the Content Sales Team",
+    "title": "Why WEAVUS CONTENT",
     "items": [
       {
         "no": "01",
@@ -129,7 +129,7 @@
   },
   "cta": {
     "title": "One IP. A global fandom.",
-    "subtitle": "Let's design your global launch with the Content Sales Team.",
+    "subtitle": "Let's design your global launch with WEAVUS CONTENT.",
     "button": "Contact us"
   },
   "servicesPage": {
@@ -151,7 +151,7 @@
   },
   "aboutPage": {
     "title": "About",
-    "subtitle": "Weavus Content Sales Team is the content maker closest to K-culture fandoms.",
+    "subtitle": "WEAVUS CONTENT is the content maker closest to K-culture fandoms.",
     "missionTitle": "Mission",
     "mission": "Turn fandom voices into stories, and stories into every language.",
     "visionTitle": "Vision",
@@ -179,13 +179,20 @@
       "required": "Please check the required fields."
     },
     "info": [
-      { "label": "Email", "value": "contents.sales@weavus.example" },
-      { "label": "Hours", "value": "Weekdays 10:00 - 19:00 (KST)" },
-      { "label": "Address", "value": "100 Hangang-daero, Yongsan-gu, Seoul" }
+      { "label": "Email", "value": "info@weavus.co.jp" },
+      { "label": "Hours", "value": "Weekdays 10:00 - 19:00 (JST)" },
+      { "label": "Address", "value": "Sun Mall Crest 205, 1-19-10 Shinjuku, Shinjuku-ku, Tokyo 160-0022" }
     ]
   },
   "footer": {
-    "copyright": "© 2026 WEAVUS CONTENT SALES. All rights reserved.",
+    "copyright": "© 2026 WEAVUS Inc. All rights reserved.",
+    "companyHeading": "COMPANY",
+    "company": [
+      { "label": "Company", "value": "WEAVUS Inc." },
+      { "label": "CEO", "value": "Ryota Mori" },
+      { "label": "Founded", "value": "January 16, 2015" },
+      { "label": "Address", "value": "Sun Mall Crest 205, 1-19-10 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan" }
+    ],
     "links": {
       "privacy": "Privacy",
       "terms": "Terms",

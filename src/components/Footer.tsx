@@ -7,7 +7,8 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
     <footer className="mt-24 bg-ink-900 text-ink-100">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_1.4fr]">
+          {/* brand block */}
           <div>
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-lg bg-brand-500">
@@ -20,9 +21,12 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 <div className="text-[11px] text-ink-300">{dict.brand.tagline}</div>
               </div>
             </div>
-            <p className="mt-5 max-w-md text-sm text-ink-300">{dict.hero.subtitle}</p>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-ink-300">
+              {dict.hero.subtitle}
+            </p>
           </div>
 
+          {/* menu */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
               Menu
@@ -51,18 +55,24 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </ul>
           </div>
 
+          {/* company info */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
-              Contact
+              {dict.footer.companyHeading}
             </h4>
-            <ul className="mt-4 space-y-2 text-sm text-ink-200">
-              {dict.contactPage.info.map((i) => (
-                <li key={i.label}>
-                  <span className="text-ink-400">{i.label} · </span>
-                  {i.value}
-                </li>
+            <dl className="mt-4 space-y-3 text-sm">
+              {dict.footer.company.map((c) => (
+                <div
+                  key={c.label}
+                  className="grid grid-cols-[72px_1fr] items-start gap-3 border-b border-ink-800 pb-2 last:border-b-0"
+                >
+                  <dt className="text-[11px] font-semibold tracking-[0.12em] text-ink-400">
+                    {c.label}
+                  </dt>
+                  <dd className="text-ink-100">{c.value}</dd>
+                </div>
               ))}
-            </ul>
+            </dl>
           </div>
         </div>
 

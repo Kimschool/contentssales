@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "WEAVUS CONTENT",
-    "tagline": "コンテンツ部 営業チーム"
+    "tagline": "WEAVUS コンテンツ"
   },
   "nav": {
     "home": "ホーム",
@@ -25,7 +25,7 @@
   },
   "strengths": {
     "eyebrow": "3 STRENGTHS",
-    "title": "コンテンツ部 営業チームの強み",
+    "title": "WEAVUS コンテンツの強み",
     "items": [
       {
         "no": "01",
@@ -129,7 +129,7 @@
   },
   "cta": {
     "title": "一つのIPで、世界のファンダムへ。",
-    "subtitle": "コンテンツ部 営業チームと一緒にグローバルローンチを設計しましょう。",
+    "subtitle": "WEAVUS コンテンツと一緒にグローバルローンチを設計しましょう。",
     "button": "お問い合わせ"
   },
   "servicesPage": {
@@ -151,7 +151,7 @@
   },
   "aboutPage": {
     "title": "会社紹介",
-    "subtitle": "WEAVUS コンテンツ部 営業チームは、K-カルチャーのファンダムに最も近いコンテンツメイカーです。",
+    "subtitle": "WEAVUS コンテンツは、K-カルチャーのファンダムに最も近いコンテンツメイカーです。",
     "missionTitle": "Mission",
     "mission": "ファンダムの声を物語に、物語を世界のことばに。",
     "visionTitle": "Vision",
@@ -179,13 +179,20 @@
       "required": "必須項目をご確認ください。"
     },
     "info": [
-      { "label": "Email", "value": "contents.sales@weavus.example" },
-      { "label": "Hours", "value": "平日 10:00 - 19:00 (KST)" },
-      { "label": "Address", "value": "ソウル市龍山区漢江大路100" }
+      { "label": "Email", "value": "info@weavus.co.jp" },
+      { "label": "Hours", "value": "平日 10:00 - 19:00 (JST)" },
+      { "label": "Address", "value": "〒160-0022 東京都新宿区新宿1-19-10 サンモール クレスト 205" }
     ]
   },
   "footer": {
-    "copyright": "© 2026 WEAVUS CONTENT SALES. All rights reserved.",
+    "copyright": "© 2026 株式会社 WEAVUS. All rights reserved.",
+    "companyHeading": "COMPANY",
+    "company": [
+      { "label": "会社名", "value": "株式会社 WEAVUS" },
+      { "label": "代表取締役", "value": "森 亮太" },
+      { "label": "設立", "value": "2015年1月16日" },
+      { "label": "所在地", "value": "〒160-0022 東京都新宿区新宿1-19-10 サンモール クレスト 205" }
+    ],
     "links": {
       "privacy": "プライバシーポリシー",
       "terms": "利用規約",
