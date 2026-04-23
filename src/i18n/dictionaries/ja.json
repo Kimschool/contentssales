@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "WEVERSE CONTENT",
+    "name": "WEAVUS CONTENT",
     "tagline": "コンテンツ部 営業チーム"
   },
   "nav": {
@@ -151,7 +151,7 @@
   },
   "aboutPage": {
     "title": "会社紹介",
-    "subtitle": "Weverse コンテンツ部 営業チームは、K-カルチャーのファンダムに最も近いコンテンツメイカーです。",
+    "subtitle": "WEAVUS コンテンツ部 営業チームは、K-カルチャーのファンダムに最も近いコンテンツメイカーです。",
     "missionTitle": "Mission",
     "mission": "ファンダムの声を物語に、物語を世界のことばに。",
     "visionTitle": "Vision",
@@ -179,13 +179,13 @@
       "required": "必須項目をご確認ください。"
     },
     "info": [
-      { "label": "Email", "value": "contents.sales@weverse.example" },
+      { "label": "Email", "value": "contents.sales@weavus.example" },
       { "label": "Hours", "value": "平日 10:00 - 19:00 (KST)" },
       { "label": "Address", "value": "ソウル市龍山区漢江大路100" }
     ]
   },
   "footer": {
-    "copyright": "© 2026 WEVERSE CONTENT SALES. All rights reserved.",
+    "copyright": "© 2026 WEAVUS CONTENT SALES. All rights reserved.",
     "links": {
       "privacy": "プライバシーポリシー",
       "terms": "利用規約",

@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "WEVERSE CONTENT",
+    "name": "WEAVUS CONTENT",
     "tagline": "Content Sales Team"
   },
   "nav": {
@@ -151,7 +151,7 @@
   },
   "aboutPage": {
     "title": "About",
-    "subtitle": "Weverse Content Sales Team is the content maker closest to K-culture fandoms.",
+    "subtitle": "Weavus Content Sales Team is the content maker closest to K-culture fandoms.",
     "missionTitle": "Mission",
     "mission": "Turn fandom voices into stories, and stories into every language.",
     "visionTitle": "Vision",
@@ -179,13 +179,13 @@
       "required": "Please check the required fields."
     },
     "info": [
-      { "label": "Email", "value": "contents.sales@weverse.example" },
+      { "label": "Email", "value": "contents.sales@weavus.example" },
       { "label": "Hours", "value": "Weekdays 10:00 - 19:00 (KST)" },
       { "label": "Address", "value": "100 Hangang-daero, Yongsan-gu, Seoul" }
     ]
   },
   "footer": {
-    "copyright": "© 2026 WEVERSE CONTENT SALES. All rights reserved.",
+    "copyright": "© 2026 WEAVUS CONTENT SALES. All rights reserved.",
     "links": {
       "privacy": "Privacy",
       "terms": "Terms",

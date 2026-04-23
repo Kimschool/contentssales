@@ -3,6 +3,7 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
+import { ServiceIcon } from "./ServiceIcon";
 
 export function Services({
   locale,
@@ -39,7 +40,8 @@ export function Services({
                 }}
               />
               <div className="relative">
-                <div className="flex items-center justify-between">
+                <ServiceIcon slug={item.slug} />
+                <div className="mt-6 flex items-center justify-between">
                   <span className="text-[11px] font-semibold tracking-[0.22em] text-ink-200/70">
                     {item.tag}
                   </span>

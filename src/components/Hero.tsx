@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { Container } from "./Container";
+import { HeroCollage } from "./HeroCollage";
 
 export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const base = `/${locale}`;
@@ -66,42 +67,9 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </dl>
           </div>
 
-          <HeroVisual />
+          <HeroCollage />
         </div>
       </Container>
     </section>
-  );
-}
-
-function HeroVisual() {
-  return (
-    <div className="relative aspect-[5/6] w-full max-w-md justify-self-center lg:max-w-none lg:justify-self-end">
-      <div className="absolute inset-0 rounded-[32px] bg-hero-gradient shadow-glow-pink" />
-      <div className="absolute inset-0 rounded-[32px] bg-noise opacity-40 mix-blend-overlay" />
-
-      <div className="absolute left-6 top-6 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-xs font-semibold tracking-[0.2em] text-white backdrop-blur-md">
-        WEBTOON / LIVE
-      </div>
-
-      <div className="absolute bottom-6 right-6 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-xs text-white backdrop-blur-md">
-        <div className="font-display text-lg font-bold text-gradient">14 languages</div>
-        <div className="text-[11px] text-white/70">native localization</div>
-      </div>
-
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-        <div className="font-display text-5xl font-black tracking-[-0.04em] text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.4)] sm:text-6xl">
-          FANDOM
-        </div>
-        <div className="mt-2 font-display text-5xl font-black tracking-[-0.04em] text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.4)] sm:text-6xl">
-          <span className="text-gradient">× STORY</span>
-        </div>
-        <div className="mx-auto mt-5 h-[2px] w-24 bg-white/60" />
-        <div className="mt-4 text-[11px] font-semibold tracking-[0.4em] text-white/80">
-          WEVERSE · CONTENTS
-        </div>
-      </div>
-
-      <div className="absolute -bottom-4 left-1/2 h-8 w-3/4 -translate-x-1/2 rounded-full bg-neon-purple/40 blur-2xl" />
-    </div>
   );
 }
