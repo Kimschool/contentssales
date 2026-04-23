@@ -14,3 +14,4 @@ next-env.d.ts
 build.log
 build-check.log
 build2.log
+.loop-state.json
