@@ -32,34 +32,31 @@ export default async function CreatorsPage({
             </div>
           </div>
 
-          {/* production journey banner — top.png */}
-          <figure className="mt-10 overflow-hidden rounded-2xl border border-ink-100 bg-canvas-soft">
-            <div className="relative aspect-[1018/436] w-full">
+          {/* hero key visual — proc.png */}
+          <figure className="relative mt-10 overflow-hidden rounded-2xl border border-ink-100 bg-ink-900">
+            <div className="relative aspect-[16/9] w-full sm:aspect-[21/9]">
               <Image
-                src="/creators/top.png"
+                src="/creators/proc.png"
                 alt={
                   locale === "ko"
-                    ? "러프 스케치에서 완성까지, 제작 과정의 6단계"
+                    ? "WEAVUS 크리에이터 키 비주얼"
                     : locale === "ja"
-                    ? "ラフからフィニッシュまで、制作過程の6ステップ"
-                    : "From rough sketch to finish — six stages of production"
+                    ? "WEAVUSクリエイターのキービジュアル"
+                    : "WEAVUS creators key visual"
                 }
                 fill
                 priority
                 sizes="(min-width: 1024px) 1120px, 100vw"
                 className="object-cover"
               />
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-transparent to-transparent"
+              />
             </div>
-            <figcaption className="flex items-center justify-between gap-4 border-t border-ink-100 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-500 sm:px-6">
-              <span>ROUGH → FINISH</span>
-              <span className="hidden text-ink-400 sm:inline">
-                {locale === "ko"
-                  ? "한 장면이 비즈니스가 되기까지 6단계"
-                  : locale === "ja"
-                  ? "一コマがビジネスになるまで6ステップ"
-                  : "Six stages from scene to business"}
-              </span>
-              <span className="text-brand-500">6 STEPS</span>
+            <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 px-5 py-5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white sm:px-8">
+              <span>— YOUR WORK, OUR STAGE</span>
+              <span className="text-brand-500">WEAVUS CREATORS · 2026</span>
             </figcaption>
           </figure>
 
@@ -245,47 +242,52 @@ export default async function CreatorsPage({
         </Container>
       </section>
 
-      {/* APPLICATION FORM — with proc.png on the left */}
+      {/* APPLICATION FORM — proc.png as wide landscape banner on top */}
       <section id="apply" className="scroll-mt-24 bg-white py-28 sm:py-32">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)]">
-            <div className="flex flex-col gap-8">
-              <div>
-                <div className="eyebrow">{c.formEyebrow}</div>
-                <h2 className="mt-6 font-display text-[clamp(32px,4.4vw,56px)] font-black leading-[0.98] tracking-tightest text-ink-900">
-                  {c.formTitle}
-                </h2>
-                <p className="mt-5 text-base leading-relaxed text-ink-500 sm:text-lg">
-                  {c.formSubtitle}
-                </p>
-              </div>
-
-              <figure className="relative overflow-hidden rounded-2xl border border-ink-100 bg-ink-900">
-                <div className="relative aspect-[4/5] w-full">
-                  <Image
-                    src="/creators/proc.png"
-                    alt={
-                      locale === "ko"
-                        ? "WEAVUS 크리에이터의 작업 예시"
-                        : locale === "ja"
-                        ? "WEAVUSクリエイターの作品例"
-                        : "WEAVUS creator work sample"
-                    }
-                    fill
-                    sizes="(min-width: 1024px) 45vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-                <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 bg-gradient-to-t from-ink-900 to-transparent px-5 py-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
-                  <span>— YOUR WORK, OUR STAGE</span>
-                  <span className="text-brand-500">WEAVUS CREATORS</span>
-                </figcaption>
-              </figure>
+          <div className="flex flex-col gap-6 border-b border-ink-900 pb-10 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <div className="eyebrow">{c.formEyebrow}</div>
+              <h2 className="mt-6 font-display text-[clamp(32px,4.4vw,56px)] font-black leading-[0.98] tracking-tightest text-ink-900">
+                {c.formTitle}
+              </h2>
             </div>
+            <p className="max-w-md text-base leading-relaxed text-ink-500 sm:text-lg">
+              {c.formSubtitle}
+            </p>
+          </div>
 
-            <div className="rounded-2xl border border-ink-100 bg-white p-8 sm:p-12">
-              <CreatorsForm dict={dict} />
+          <figure className="relative mt-10 overflow-hidden rounded-2xl border border-ink-100 bg-canvas-soft">
+            <div className="relative aspect-[1018/436] w-full">
+              <Image
+                src="/creators/top.png"
+                alt={
+                  locale === "ko"
+                    ? "러프 스케치에서 완성까지, 제작 과정의 6단계"
+                    : locale === "ja"
+                    ? "ラフからフィニッシュまで、制作過程の6ステップ"
+                    : "From rough sketch to finish — six stages of production"
+                }
+                fill
+                sizes="(min-width: 1024px) 1120px, 100vw"
+                className="object-cover"
+              />
             </div>
+            <figcaption className="flex items-center justify-between gap-4 border-t border-ink-100 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-500 sm:px-6">
+              <span>ROUGH → FINISH</span>
+              <span className="hidden text-ink-400 sm:inline">
+                {locale === "ko"
+                  ? "한 장면이 비즈니스가 되기까지 6단계"
+                  : locale === "ja"
+                  ? "一コマがビジネスになるまで6ステップ"
+                  : "Six stages from scene to business"}
+              </span>
+              <span className="text-brand-500">6 STEPS</span>
+            </figcaption>
+          </figure>
+
+          <div className="mt-12 rounded-2xl border border-ink-100 bg-white p-8 sm:p-12 lg:p-16">
+            <CreatorsForm dict={dict} />
           </div>
         </Container>
       </section>
