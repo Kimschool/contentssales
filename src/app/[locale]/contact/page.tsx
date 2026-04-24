@@ -22,10 +22,10 @@ export default async function ContactPage({
         subtitle={dict.contactPage.subtitle}
       />
 
-      <section className="py-12 pb-24">
+      <section className="py-20 pb-28">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[1fr_0.6fr]">
-            <div className="rounded-2xl border border-ink-200 bg-white p-8 shadow-card sm:p-10">
+          <div className="grid gap-10 lg:grid-cols-[1fr_0.55fr]">
+            <div className="rounded-2xl border border-ink-100 bg-white p-8 sm:p-12">
               <ContactForm dict={dict} />
             </div>
 
@@ -33,25 +33,25 @@ export default async function ContactPage({
               {dict.contactPage.info.map((i) => (
                 <div
                   key={i.label}
-                  className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card"
+                  className="rounded-2xl border border-ink-100 bg-white p-6"
                 >
-                  <div className="text-[11px] font-semibold tracking-[0.22em] text-brand-600">
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-500">
                     {i.label}
                   </div>
-                  <div className="mt-2 font-display text-base font-bold text-ink-900">
+                  <div className="mt-2 font-display text-base font-black text-ink-900">
                     {i.value}
                   </div>
                 </div>
               ))}
 
-              <div className="rounded-2xl bg-brand-500 p-6 text-ink-900">
-                <div className="text-[11px] font-semibold tracking-[0.22em] opacity-80">
-                  RESPONSE TIME
+              <div className="rounded-2xl bg-ink-900 p-6 text-white">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-500">
+                  Response Time
                 </div>
-                <div className="mt-2 font-display text-2xl font-black">
+                <div className="mt-3 font-display text-2xl font-black tracking-tightest">
                   &lt; 2 business days
                 </div>
-                <p className="mt-2 text-sm text-ink-800">
+                <p className="mt-3 text-sm text-white/70">
                   {locale === "ko"
                     ? "영업일 기준 2일 이내 답변드립니다."
                     : locale === "ja"

@@ -5,56 +5,44 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // 단일 브랜드 컬러 — 옐로우 (warm yellow)
+        // Pink accent — Sorajima 블루 대비 브랜드 시그니처
         brand: {
-          50: "#fffbeb",
-          100: "#fef3c7",
-          200: "#fde68a",
-          300: "#fcd34d",
-          400: "#fbbf24",
-          500: "#facc15", // main — hero / CTA 배경
-          600: "#eab308",
-          700: "#ca8a04",
-          800: "#a16207",
-          900: "#713f12"
+          50: "#fff0f5",
+          100: "#ffdae8",
+          200: "#ffb0cf",
+          300: "#ff7fb0",
+          400: "#ff4d94",
+          500: "#ff1f6a",
+          600: "#e60e56",
+          700: "#b8084a",
+          800: "#8e0638",
+          900: "#5d0424"
         },
         ink: {
-          50: "#f7f8f9",
-          100: "#eef0f3",
-          200: "#dde1e7",
-          300: "#b9c0ca",
-          400: "#858d9a",
-          500: "#5a6370",
-          600: "#3d4552",
-          700: "#272d38",
-          800: "#171c25",
-          900: "#0b1019"
+          50: "#f6f6f7",
+          100: "#ececed",
+          200: "#d9d9dc",
+          300: "#b3b4b8",
+          400: "#828388",
+          500: "#5a5b61",
+          600: "#3c3d44",
+          700: "#25262c",
+          800: "#141518",
+          900: "#000000"
         },
         canvas: {
           DEFAULT: "#ffffff",
-          soft: "#fafaf7",
-          band: "#fff8e1"
+          soft: "#f6f6f3",
+          band: "#ededea"
         }
       },
       fontFamily: {
-        sans: [
-          "var(--font-sans)",
-          "Pretendard",
-          "system-ui",
-          "-apple-system",
-          "Segoe UI",
-          "sans-serif"
-        ],
-        display: [
-          "var(--font-display)",
-          "Pretendard",
-          "system-ui",
-          "sans-serif"
-        ]
+        sans: ["var(--font-stack)"],
+        display: ["var(--font-stack)"]
       },
-      boxShadow: {
-        card: "0 1px 2px rgba(11, 16, 25, 0.04), 0 4px 12px rgba(11, 16, 25, 0.06)",
-        hover: "0 2px 4px rgba(11, 16, 25, 0.06), 0 10px 30px rgba(250, 204, 21, 0.28)"
+      letterSpacing: {
+        tightest: "-0.04em",
+        display: "-0.03em"
       }
     }
   },

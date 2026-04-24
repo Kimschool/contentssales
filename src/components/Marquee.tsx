@@ -1,29 +1,30 @@
 export function Marquee({ items }: { items: string[] }) {
-  const doubled = [...items, ...items, ...items];
+  const doubled = [...items, ...items, ...items, ...items];
   return (
-    <div
-      className="overflow-hidden border-y border-ink-100 bg-canvas-soft py-4"
-      style={{
-        maskImage:
-          "linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%)",
-        WebkitMaskImage:
-          "linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%)"
-      }}
-    >
-      <div className="flex gap-14 whitespace-nowrap">
+    <div className="overflow-hidden border-y border-ink-100 bg-white py-6">
+      <div
+        className="flex animate-[marquee_36s_linear_infinite] gap-10 whitespace-nowrap"
+        style={{ width: "max-content" }}
+      >
         {doubled.map((item, idx) => (
           <span
             key={idx}
-            className="inline-flex items-center gap-3 font-display text-xs font-bold uppercase tracking-[0.3em] text-ink-500"
+            className="inline-flex items-center gap-10 font-display text-2xl font-black uppercase tracking-[-0.01em] text-ink-900 sm:text-3xl"
           >
+            {item}
             <span
               aria-hidden
-              className="inline-block h-1.5 w-1.5 rotate-45 bg-brand-500"
+              className="inline-block h-2 w-2 rounded-full bg-brand-500"
             />
-            {item}
           </span>
         ))}
       </div>
+      <style>{`
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+      `}</style>
     </div>
   );
 }

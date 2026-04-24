@@ -7,20 +7,22 @@
     "home": "Home",
     "services": "Services",
     "portfolio": "Portfolio",
+    "creators": "Creators",
     "about": "About",
     "contact": "Contact",
     "cta": "Get in Touch"
   },
   "hero": {
-    "eyebrow": "WEBTOON PRODUCTION · GLOBAL LOCALIZATION",
-    "title": "Fandom stories,\nin every language.",
-    "subtitle": "From concept to serialization and multilingual localization, our team knows K-culture fandom inside-out — and delivers end-to-end.",
+    "eyebrow": "CONTENT · COMMERCE · GLOBAL",
+    "title": "From Story\nto Business.",
+    "subtitle": "We turn fandom IP into global businesses — planning, production, worldwide distribution, and monetization under one partner.",
     "ctaPrimary": "Start a Project",
-    "ctaSecondary": "See Services",
+    "ctaSecondary": "See Our Works",
     "stats": [
-      { "value": "120+", "label": "Episodes produced / year" },
+      { "value": "120+", "label": "Episodes yearly" },
       { "value": "14", "label": "Languages localized" },
-      { "value": "32", "label": "Partner studios" }
+      { "value": "32", "label": "Partner studios" },
+      { "value": "8", "label": "Publishing platforms" }
     ]
   },
   "strengths": {
@@ -45,52 +47,52 @@
     ]
   },
   "services": {
-    "eyebrow": "SERVICES",
-    "title": "What we offer",
-    "subtitle": "Centered on webtoon production and global localization, we take fandom IP from concept to live serialization with speed and reliability.",
+    "eyebrow": "WHAT WE DO",
+    "title": "From Story to Global Business",
+    "subtitle": "Planning, production, global distribution, monetization — we design the full content-to-business pipeline under one roof.",
     "items": [
       {
+        "slug": "planning",
+        "tag": "01",
+        "title": "Planning / Development",
+        "desc": "We decode fandom, IP, and artist universes — then design story lines built for global serialization.",
+        "points": [
+          "Fandom research · concept boards",
+          "Season-based serialization",
+          "Spin-offs & derivative strategy"
+        ]
+      },
+      {
         "slug": "production",
-        "tag": "WEBTOON PRODUCTION",
-        "title": "Webtoon Production",
-        "desc": "Full production turning fandom IP, artist universes, and original stories into complete webtoons.",
+        "tag": "02",
+        "title": "Production",
+        "desc": "Script, storyboard, art, color, editing — end-to-end webtoon production in one studio system.",
         "points": [
           "Planning · script · storyboard",
           "Division-of-labor studio ops",
-          "Platform launch support"
+          "QA and serialization management"
         ]
       },
       {
         "slug": "localization",
-        "tag": "LOCALIZATION",
-        "title": "Webtoon Localization",
-        "desc": "14 languages — native translation, typesetting, QA, platform formatting — all in one pipeline.",
+        "tag": "03",
+        "title": "Distribution / Partnership",
+        "desc": "Native localization across 14 languages and simultaneous rollout on 8 global platforms.",
         "points": [
           "Translation + native review",
-          "Typesetting / SFX localization",
-          "Webtoon · manga · webcomic formats"
-        ]
-      },
-      {
-        "slug": "planning",
-        "tag": "PLANNING",
-        "title": "IP Planning / Editing",
-        "desc": "We decode the artist universe and fandom core, then design a serialized story line.",
-        "points": [
-          "Fandom research · concept boards",
-          "Season-based serialization",
-          "Spin-offs / derivative works"
+          "Typesetting · retouching · SFX",
+          "Global platform launch"
         ]
       },
       {
         "slug": "studio",
-        "tag": "STUDIO",
-        "title": "Studio Operations",
-        "desc": "From studio setup to artist matching and quality control.",
+        "tag": "04",
+        "title": "Monetization",
+        "desc": "IP licensing, spin-offs, MD, fandom commerce — we extend every story into a revenue model.",
         "points": [
-          "Studio setup consulting",
-          "Artist recruiting / matching",
-          "Quality assurance process"
+          "IP licensing strategy",
+          "Fandom commerce · MD development",
+          "Cross-media expansion"
         ]
       }
     ]
@@ -127,9 +129,19 @@
       }
     ]
   },
+  "works": {
+    "eyebrow": "OUR WORKS",
+    "title": "Creating Impact\nWorldwide.",
+    "subtitle": "Proven performance on global platforms — turning single stories into worldwide businesses.",
+    "stats": [
+      { "value": "30M+", "label": "Global Users" },
+      { "value": "1B+", "label": "Total Views" },
+      { "value": "Top 10", "label": "Platform Rankings" }
+    ]
+  },
   "cta": {
-    "title": "One IP. A global fandom.",
-    "subtitle": "Let's design your global launch with WEAVUS CONTENT.",
+    "title": "From Story to Business.\nLet's design it together.",
+    "subtitle": "Let's architect your global content business with WEAVUS.",
     "button": "Contact us"
   },
   "servicesPage": {
@@ -183,6 +195,68 @@
       { "label": "Hours", "value": "Weekdays 10:00 - 19:00 (JST)" },
       { "label": "Address", "value": "Sun Mall Crest 205, 1-19-10 Shinjuku, Shinjuku-ku, Tokyo 160-0022" }
     ]
+  },
+  "creators": {
+    "heroEyebrow": "CREATORS · RECRUITMENT",
+    "heroTitle": "Artists & creators,\nwe want you.",
+    "heroLead": [
+      "Dreams are better when they sound a little crazy.",
+      "We move beyond common sense — turning imagination into reality.",
+      "WEAVUS is built on one mission: create the defining content of this century,",
+      "and stand with creators at full commitment.",
+      "Let's give form to the world you want to draw — together with WEAVUS."
+    ],
+    "primaryCta": "Apply now",
+    "secondaryCta": "Pitch your work",
+    "processEyebrow": "APPLICATION FLOW",
+    "processTitle": "From application to registration",
+    "processSubtitle": "Document review → Portfolio review → Matching → Contract → Serialization. We reply within 3 weeks.",
+    "process": [
+      { "no": "01", "title": "Submit application", "desc": "Share your portfolio URL and basic info." },
+      { "no": "02", "title": "Document · portfolio review", "desc": "Our team responds within 3 weeks with a decision." },
+      { "no": "03", "title": "Matching", "desc": "Selected creators register as 'WEAVUS Creators' and get matched to projects." },
+      { "no": "04", "title": "Contract", "desc": "Transparent per-process freelance contracts." },
+      { "no": "05", "title": "Launch / Monetization", "desc": "From global platform serialization to IP expansion." }
+    ],
+    "lookingEyebrow": "WHAT WE LOOK FOR",
+    "lookingTitle": "Work we'd love to see",
+    "looking": [
+      { "tag": "CHARACTER", "title": "Character illustration", "desc": "Character art with a sense of panel flow for webtoon & manga." },
+      { "tag": "LINE / SKETCH", "title": "Line / sketch", "desc": "Rough and line art showing proportion, pose, and expression." },
+      { "tag": "BACKGROUND", "title": "Background art", "desc": "Landscapes, architecture, interiors — specialty background work." },
+      { "tag": "FINISH / COLOR", "title": "Color / finishing", "desc": "Color, effects, and finish polish applied over other artists' line art." }
+    ],
+    "formEyebrow": "APPLY",
+    "formTitle": "Creator application form",
+    "formSubtitle": "Just a portfolio URL and a few details — we'll respond within 3 business weeks.",
+    "form": {
+      "name": "Name / handle",
+      "email": "Email",
+      "role": "Role",
+      "roleOptions": ["Character", "Line / Sketch", "Background", "Color / Finish", "Story / Planning", "Other"],
+      "portfolio1": "Portfolio URL ①",
+      "portfolio2": "Portfolio URL ② (optional)",
+      "source": "How did you find us?",
+      "sourceOptions": ["WEAVUS website", "Social ad", "Instagram / X", "Referral", "Event / Magazine", "Other"],
+      "intro": "About you",
+      "introPlaceholder": "Tell us about your practice, experience, and the genres you love.",
+      "submit": "Submit application",
+      "success": "Application received — we'll reply within 3 business weeks.",
+      "required": "Please fill in the required fields."
+    },
+    "noticesEyebrow": "IMPORTANT",
+    "noticesTitle": "Before you apply",
+    "notices": [
+      "Your portfolio continues to be a reference even after the initial review.",
+      "Accepted applicants register as 'WEAVUS Creators' and are contacted when a project matches.",
+      "All work is offered as freelance (業務委託) contracts.",
+      "Minors must submit a guardian consent form.",
+      "This form is for individual creators only. For company inquiries, see below."
+    ],
+    "businessEyebrow": "FOR COMPANIES",
+    "businessTitle": "Companies & studios",
+    "businessBody": "Production houses, studios, and companies — please reach out via the official Contact page. Using this form may delay our response.",
+    "businessCta": "Go to Contact"
   },
   "footer": {
     "copyright": "© 2026 WEAVUS Inc. All rights reserved.",

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Hero } from "@/components/Hero";
 import { Strengths } from "@/components/Strengths";
 import { Services } from "@/components/Services";
-import { PortfolioGrid } from "@/components/PortfolioGrid";
+import { WorksImpact } from "@/components/WorksImpact";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Marquee } from "@/components/Marquee";
 
@@ -18,21 +18,21 @@ export default async function HomePage({
   const dict = await getDictionary(locale);
 
   const marqueeItems = [
-    "WEBTOON PRODUCTION",
-    "GLOBAL LOCALIZATION",
+    "CONTENT",
+    "COMMERCE",
+    "GLOBAL",
     "FANDOM IP",
-    "14 LANGUAGES",
-    "ONE-STOP PIPELINE",
-    "K-CULTURE"
+    "STORY TO BUSINESS",
+    "14 LANGUAGES"
   ];
 
   return (
     <>
       <Hero locale={locale} dict={dict} />
       <Marquee items={marqueeItems} />
-      <Strengths dict={dict} />
       <Services locale={locale} dict={dict} />
-      <PortfolioGrid locale={locale} dict={dict} />
+      <Strengths dict={dict} />
+      <WorksImpact locale={locale} dict={dict} />
       <CtaBanner locale={locale} dict={dict} />
     </>
   );

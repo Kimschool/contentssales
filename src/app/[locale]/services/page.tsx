@@ -5,7 +5,6 @@ import { Services } from "@/components/Services";
 import { CtaBanner } from "@/components/CtaBanner";
 import { PageHero } from "@/components/PageHero";
 import { Container } from "@/components/Container";
-import { SectionHeading } from "@/components/SectionHeading";
 
 export default async function ServicesPage({
   params
@@ -26,30 +25,30 @@ export default async function ServicesPage({
 
       <Services locale={locale} dict={dict} showCta={false} />
 
-      <section className="bg-canvas-soft py-20">
+      <section className="bg-canvas-soft py-28 sm:py-32">
         <Container>
-          <SectionHeading
-            eyebrow="PROCESS"
-            title={dict.servicesPage.processTitle}
-            subtitle={dict.servicesPage.processSubtitle}
-          />
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-end">
+            <div>
+              <div className="eyebrow">Process</div>
+              <h2 className="mt-6 font-display text-[clamp(36px,5.2vw,64px)] font-black leading-[0.95] tracking-tightest text-ink-900">
+                {dict.servicesPage.processTitle}
+              </h2>
+            </div>
+            <p className="text-base leading-relaxed text-ink-500 sm:text-lg">
+              {dict.servicesPage.processSubtitle}
+            </p>
+          </div>
 
-          <ol className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+          <ol className="mt-16 grid gap-px overflow-hidden rounded-2xl bg-ink-100 sm:grid-cols-2 lg:grid-cols-5">
             {dict.servicesPage.process.map((p, i) => (
-              <li
-                key={p.no}
-                className="rounded-2xl border border-ink-200 bg-white p-6 shadow-card"
-              >
-                <div className="text-[11px] font-semibold tracking-[0.22em] text-brand-600">
-                  {p.no}
-                </div>
-                <div className="mt-2 font-display text-4xl font-black text-brand-500">
+              <li key={p.no} className="bg-white p-8">
+                <div className="font-display text-[44px] font-black leading-none tracking-tightest text-brand-500">
                   0{i + 1}
                 </div>
-                <h3 className="mt-4 font-display text-base font-bold text-ink-900">
+                <h3 className="mt-8 font-display text-base font-black text-ink-900">
                   {p.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-500">{p.desc}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink-500">{p.desc}</p>
               </li>
             ))}
           </ol>

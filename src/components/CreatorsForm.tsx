@@ -3,14 +3,14 @@
 import { useState } from "react";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
-export function ContactForm({ dict }: { dict: Dictionary }) {
-  const f = dict.contactPage.form;
+export function CreatorsForm({ dict }: { dict: Dictionary }) {
+  const f = dict.creators.form;
   const [status, setStatus] = useState<"idle" | "error" | "success">("idle");
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    const required = ["company", "name", "email", "message"];
+    const required = ["name", "email", "role", "portfolio1", "intro"];
     for (const key of required) {
       if (!String(data.get(key) ?? "").trim()) {
         setStatus("error");
@@ -24,33 +24,69 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid gap-6 sm:grid-cols-2">
-        <Field label={f.company} name="company" required />
         <Field label={f.name} name="name" required />
         <Field label={f.email} name="email" type="email" required />
-        <Field label={f.phone} name="phone" />
       </div>
 
       <div>
-        <Label>{f.category}</Label>
+        <Label required>{f.role}</Label>
         <select
-          name="category"
-          defaultValue={f.categories[0]}
+          name="role"
+          defaultValue=""
           className="mt-2 w-full border-0 border-b border-ink-200 bg-transparent py-3 text-sm text-ink-900 outline-none transition focus:border-brand-500"
         >
-          {f.categories.map((c) => (
-            <option key={c} value={c}>
-              {c}
+          <option value="" disabled>
+            —
+          </option>
+          {f.roleOptions.map((r) => (
+            <option key={r} value={r}>
+              {r}
             </option>
           ))}
         </select>
       </div>
 
+      <Field
+        label={f.portfolio1}
+        name="portfolio1"
+        type="url"
+        required
+        placeholder="https://"
+      />
+      <Field
+        label={f.portfolio2}
+        name="portfolio2"
+        type="url"
+        placeholder="https://"
+      />
+
       <div>
-        <Label required>{f.message}</Label>
+        <Label>{f.source}</Label>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {f.sourceOptions.map((s, i) => (
+            <label
+              key={s}
+              className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-ink-200 px-4 py-2 text-xs font-semibold text-ink-600 transition hover:border-ink-900 hover:text-ink-900 has-[:checked]:border-brand-500 has-[:checked]:bg-brand-500 has-[:checked]:text-white"
+            >
+              <input
+                type="radio"
+                name="source"
+                value={s}
+                defaultChecked={i === 0}
+                className="sr-only"
+              />
+              {s}
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <Label required>{f.intro}</Label>
         <textarea
-          name="message"
-          rows={6}
-          placeholder={f.messagePlaceholder}
+          name="intro"
+          rows={5}
+          placeholder={f.introPlaceholder}
           className="mt-2 w-full border-0 border-b border-ink-200 bg-transparent py-3 text-sm text-ink-900 placeholder:text-ink-400 outline-none transition focus:border-brand-500"
         />
       </div>
@@ -68,7 +104,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
 
       <button
         type="submit"
-        className="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-brand-600"
+        className="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-7 py-4 text-sm font-semibold text-white transition hover:bg-brand-600"
       >
         {f.submit}
         <span
@@ -101,12 +137,14 @@ function Field({
   label,
   name,
   type = "text",
-  required
+  required,
+  placeholder
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
+  placeholder?: string;
 }) {
   return (
     <div>
@@ -114,6 +152,7 @@ function Field({
       <input
         type={type}
         name={name}
+        placeholder={placeholder}
         className="mt-2 w-full border-0 border-b border-ink-200 bg-transparent py-3 text-sm text-ink-900 placeholder:text-ink-400 outline-none transition focus:border-brand-500"
       />
     </div>

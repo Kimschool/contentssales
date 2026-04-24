@@ -7,20 +7,22 @@
     "home": "홈",
     "services": "서비스",
     "portfolio": "포트폴리오",
+    "creators": "크리에이터",
     "about": "회사 소개",
     "contact": "문의하기",
     "cta": "제작 문의"
   },
   "hero": {
-    "eyebrow": "WEBTOON PRODUCTION · GLOBAL LOCALIZATION",
-    "title": "팬덤의 스토리를\n세계의 언어로.",
-    "subtitle": "K-컬처 팬덤을 가장 깊이 이해하는 팀이 기획부터 연재, 다국어 로컬라이징까지 원스톱으로 제공합니다.",
+    "eyebrow": "CONTENT · COMMERCE · GLOBAL",
+    "title": "From Story\nto Business.",
+    "subtitle": "팬덤 IP를 세계의 비즈니스로. 기획부터 제작, 글로벌 유통, 수익화까지 하나의 파트너로 연결합니다.",
     "ctaPrimary": "제작 상담하기",
-    "ctaSecondary": "서비스 살펴보기",
+    "ctaSecondary": "우리의 작품 보기",
     "stats": [
       { "value": "120+", "label": "연간 제작 에피소드" },
-      { "value": "14개국", "label": "로컬라이징 언어" },
-      { "value": "32", "label": "파트너 스튜디오" }
+      { "value": "14", "label": "로컬라이징 언어" },
+      { "value": "32", "label": "파트너 스튜디오" },
+      { "value": "8", "label": "연재 플랫폼" }
     ]
   },
   "strengths": {
@@ -45,52 +47,52 @@
     ]
   },
   "services": {
-    "eyebrow": "SERVICES",
-    "title": "제공 서비스",
-    "subtitle": "웹툰 제작과 글로벌 로컬라이징을 중심으로, 팬덤 IP를 가장 빠르고 안정적으로 연재 단계까지 이끌어냅니다.",
+    "eyebrow": "WHAT WE DO",
+    "title": "From Story to Global Business",
+    "subtitle": "기획부터 제작, 글로벌 유통, 수익화까지 — 콘텐츠 비즈니스의 전 단계를 한 팀에서 설계합니다.",
     "items": [
       {
+        "slug": "planning",
+        "tag": "01",
+        "title": "기획 / 개발",
+        "desc": "팬덤 · IP · 아티스트 세계관을 해석해 글로벌 연재용 스토리 라인을 설계합니다.",
+        "points": [
+          "팬덤 리서치 · 컨셉 보드",
+          "시즌제 연재 기획",
+          "스핀오프 / 2차 창작 전략"
+        ]
+      },
+      {
         "slug": "production",
-        "tag": "WEBTOON PRODUCTION",
-        "title": "웹툰 제작",
-        "desc": "팬덤 IP · 아이돌 세계관 · 오리지널 스토리를 웹툰으로 완성하는 풀 프로덕션.",
+        "tag": "02",
+        "title": "제작",
+        "desc": "시나리오 · 콘티 · 작화 · 채색 · 편집까지 완결형 웹툰 프로덕션.",
         "points": [
           "기획 · 시나리오 · 콘티",
           "분업 스튜디오 운영",
-          "연재 플랫폼 론칭 지원"
+          "품질 QA 및 연재 운영"
         ]
       },
       {
         "slug": "localization",
-        "tag": "LOCALIZATION",
-        "title": "웹툰 로컬라이징",
-        "desc": "14개 언어 네이티브 번역 · 식자 · QA · 플랫폼 포맷 대응까지 원스톱.",
+        "tag": "03",
+        "title": "유통 / 파트너십",
+        "desc": "14개 언어 네이티브 로컬라이징과 8개 글로벌 플랫폼 동시 연재 운영.",
         "points": [
-          "전문 번역 + 감수 2단계",
-          "식자/리터칭 · 효과음 현지화",
-          "웹툰·망가·웹코믹 포맷 지원"
-        ]
-      },
-      {
-        "slug": "planning",
-        "tag": "PLANNING",
-        "title": "IP 기획 / 편집",
-        "desc": "아티스트 세계관·팬덤 코어를 분석해 연재용 스토리 라인을 설계합니다.",
-        "points": [
-          "팬덤 리서치 · 컨셉 보드",
-          "시즌제 연재 기획",
-          "스핀오프 / 2차 창작"
+          "전문 번역 + 네이티브 감수",
+          "식자 · 리터칭 · 효과음 현지화",
+          "글로벌 플랫폼 론칭"
         ]
       },
       {
         "slug": "studio",
-        "tag": "STUDIO",
-        "title": "스튜디오 운영",
-        "desc": "분업제 스튜디오 구축부터 작가 매칭, 품질 관리까지.",
+        "tag": "04",
+        "title": "수익화",
+        "desc": "IP 라이선싱, 스핀오프, MD, 팬덤 비즈니스까지 수익 모델을 확장합니다.",
         "points": [
-          "스튜디오 셋업 컨설팅",
-          "작가 리쿠르팅 / 매칭",
-          "품질 QA 프로세스"
+          "IP 라이선싱 전략",
+          "팬덤 커머스 · MD 개발",
+          "크로스 미디어 확장"
         ]
       }
     ]
@@ -127,9 +129,19 @@
       }
     ]
   },
+  "works": {
+    "eyebrow": "OUR WORKS",
+    "title": "Creating Impact\nWorldwide.",
+    "subtitle": "글로벌 플랫폼에서 검증된 성과. 하나의 스토리를 세계의 비즈니스로.",
+    "stats": [
+      { "value": "30M+", "label": "Global Users" },
+      { "value": "1B+", "label": "Total Views" },
+      { "value": "Top 10", "label": "Platform Rankings" }
+    ]
+  },
   "cta": {
-    "title": "IP 하나로, 세계의 팬덤을 만나다.",
-    "subtitle": "WEAVUS 콘텐츠와 함께 글로벌 런칭 전략을 설계해 보세요.",
+    "title": "From Story to Business.\n함께 설계합니다.",
+    "subtitle": "팬덤 IP의 글로벌 비즈니스 전략을 WEAVUS와 함께 설계해 보세요.",
     "button": "지금 문의하기"
   },
   "servicesPage": {
@@ -183,6 +195,68 @@
       { "label": "Hours", "value": "평일 10:00 - 19:00 (JST)" },
       { "label": "Address", "value": "〒160-0022 도쿄도 신주쿠구 신주쿠 1-19-10 산몰 크레스트 205호" }
     ]
+  },
+  "creators": {
+    "heroEyebrow": "CREATORS · RECRUITMENT",
+    "heroTitle": "작가, 크리에이터,\n모집합니다.",
+    "heroLead": [
+      "꿈은 남들이 비웃을 만큼 커도 좋습니다.",
+      "상식을 넘어, 상상을 현실로 바꿔가는 여정.",
+      "WEAVUS는 '세기를 대표할 콘텐츠를 만든다'는 목표 아래,",
+      "크리에이터의 활약에 전력으로 함께합니다.",
+      "당신이 그리고 싶은 세계를, WEAVUS와 함께 카타치로."
+    ],
+    "primaryCta": "지금 응모하기",
+    "secondaryCta": "포트폴리오 제안",
+    "processEyebrow": "APPLICATION FLOW",
+    "processTitle": "응모부터 등록까지",
+    "processSubtitle": "서류 심사 → 포트폴리오 리뷰 → 매칭 → 계약 → 연재. 보통 3주 이내 회신드립니다.",
+    "process": [
+      { "no": "01", "title": "응모 접수", "desc": "포트폴리오 URL과 기본 정보를 제출합니다." },
+      { "no": "02", "title": "서류 · 작품 심사", "desc": "팀이 3주 이내에 심사 결과를 회신합니다." },
+      { "no": "03", "title": "매칭", "desc": "합격자는 'WEAVUS 크리에이터'로 등록되어 프로젝트에 매칭됩니다." },
+      { "no": "04", "title": "계약", "desc": "업무위탁 형태의 공정 단위 계약으로 투명하게 시작합니다." },
+      { "no": "05", "title": "연재 / 수익화", "desc": "글로벌 플랫폼 연재와 IP 확장까지 함께 설계합니다." }
+    ],
+    "lookingEyebrow": "WHAT WE LOOK FOR",
+    "lookingTitle": "이런 창작을 기다립니다",
+    "looking": [
+      { "tag": "CHARACTER", "title": "캐릭터 일러스트", "desc": "웹툰·만화 컷 분할이 가능한 캐릭터 작화." },
+      { "tag": "LINE / SKETCH", "title": "인물 라인 / 스케치", "desc": "비율·포즈·표정이 드러나는 러프와 라인 아트." },
+      { "tag": "BACKGROUND", "title": "배경 작화", "desc": "풍경·건축·실내 등 배경 전문 작업물." },
+      { "tag": "FINISH / COLOR", "title": "채색 · 마감", "desc": "채색·효과·마감 후처리 포트폴리오." }
+    ],
+    "formEyebrow": "APPLY",
+    "formTitle": "크리에이터 응모 폼",
+    "formSubtitle": "포트폴리오 URL과 기본 정보만으로 응모가 가능합니다. 영업일 기준 최대 3주 이내 답변드립니다.",
+    "form": {
+      "name": "이름 / 필명",
+      "email": "이메일",
+      "role": "지원 분야",
+      "roleOptions": ["캐릭터", "라인 / 스케치", "배경", "채색 / 마감", "스토리 / 기획", "기타"],
+      "portfolio1": "포트폴리오 URL ①",
+      "portfolio2": "포트폴리오 URL ② (선택)",
+      "source": "응모 경로",
+      "sourceOptions": ["WEAVUS 공식 사이트", "SNS 광고", "Instagram / X", "소개 / 추천", "이벤트 / 잡지", "기타"],
+      "intro": "자기소개",
+      "introPlaceholder": "활동 영역, 작업 기간, 관심 장르 등 자유롭게 적어주세요.",
+      "submit": "응모하기",
+      "success": "응모가 접수되었습니다. 최대 3주 이내 회신드립니다.",
+      "required": "필수 항목을 확인해주세요."
+    },
+    "noticesEyebrow": "IMPORTANT",
+    "noticesTitle": "응모 전 확인사항",
+    "notices": [
+      "제출해 주신 포트폴리오는 심사 이후에도 지속적으로 참고되는 중요한 자료입니다.",
+      "합격자에 한해 'WEAVUS 크리에이터'로 등록되며, 프로젝트 매칭 시 개별 연락드립니다.",
+      "업무 형태는 업무위탁(프리랜서) 계약입니다.",
+      "미성년자는 보호자 동의서 제출이 필요합니다.",
+      "본 폼은 개인 크리에이터 전용입니다. 기업 · 스튜디오 문의는 하단 안내를 확인해주세요."
+    ],
+    "businessEyebrow": "FOR COMPANIES",
+    "businessTitle": "기업 · 법인 문의",
+    "businessBody": "제작사 · 스튜디오 · 기업의 업무 제휴·제작 의뢰는 공식 문의 페이지에서 진행해주세요. 본 응모 폼과 혼동 시 회신이 지연될 수 있습니다.",
+    "businessCta": "문의 페이지로"
   },
   "footer": {
     "copyright": "© 2026 株式会社 WEAVUS. All rights reserved.",

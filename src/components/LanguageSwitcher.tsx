@@ -10,23 +10,27 @@ export function LanguageSwitcher({ current }: { current: Locale }) {
   const rest = segments.slice(1).join("/");
 
   return (
-    <div className="flex items-center gap-0.5 rounded-full border border-brand-200 bg-white p-1 text-[11px] font-bold">
-      {locales.map((l) => {
+    <div className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.16em]">
+      {locales.map((l, i) => {
         const href = `/${l}${rest ? "/" + rest : ""}`;
         const active = l === current;
         return (
-          <Link
-            key={l}
-            href={href}
-            className={
-              "rounded-full px-2.5 py-1 transition " +
-              (active
-                ? "bg-brand-500 text-ink-900 shadow-[0_2px_0_0_rgb(202,138,4)]"
-                : "text-ink-500 hover:bg-brand-50 hover:text-ink-900")
-            }
-          >
-            {localeLabels[l]}
-          </Link>
+          <span key={l} className="inline-flex items-center gap-3">
+            <Link
+              href={href}
+              className={
+                "transition-colors " +
+                (active ? "text-ink-900" : "text-ink-400 hover:text-ink-900")
+              }
+            >
+              {localeLabels[l]}
+            </Link>
+            {i < locales.length - 1 ? (
+              <span aria-hidden className="text-ink-300">
+                /
+              </span>
+            ) : null}
+          </span>
         );
       })}
     </div>

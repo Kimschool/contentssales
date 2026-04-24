@@ -3,15 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: "Pretendard", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: "Pretendard", "Inter", system-ui, sans-serif;
+  /* Inter = latin. Noto Sans JP/KR handle CJK glyphs in the fallback chain */
+  --font-stack:
+    var(--font-sans),
+    var(--font-jp),
+    var(--font-kr),
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    "Meiryo",
+    "Apple SD Gothic Neo",
+    "Malgun Gothic",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
 }
 
 html,
 body {
   background: #ffffff;
-  color: #171c25;
-  font-family: var(--font-sans);
+  color: #000000;
+  font-family: var(--font-stack);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -21,48 +33,36 @@ body {
 }
 
 ::selection {
-  background: #fef3c7;
-  color: #713f12;
+  background: #ff1f6a;
+  color: #ffffff;
 }
 
-.section-label {
+.eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  background: #fffbeb;
-  color: #a16207;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+  color: #ff1f6a;
 }
 
-.section-label::before {
+.eyebrow::before {
   content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 9999px;
-  background: #facc15;
-}
-
-.divider-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  color: #a16207;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-.divider-label::before,
-.divider-label::after {
-  content: "";
-  flex: 1;
-  max-width: 180px;
+  width: 18px;
   height: 1px;
-  background: #dde1e7;
+  background: #ff1f6a;
+}
+
+.display-hero {
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.display-xl {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }

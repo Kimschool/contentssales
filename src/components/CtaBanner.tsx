@@ -5,32 +5,33 @@ import { Container } from "./Container";
 
 export function CtaBanner({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const base = `/${locale}`;
+  const titleLines = dict.cta.title.split("\n");
   return (
-    <section className="py-20">
+    <section className="bg-brand-500 py-24 text-white sm:py-32">
       <Container>
-        <div className="relative overflow-hidden rounded-2xl bg-brand-500 p-10 text-ink-900 sm:p-14">
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.1]"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(110deg, #171c25 0 2px, transparent 2px 18px)"
-            }}
-          />
-          <div className="relative flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
-            <div className="max-w-2xl">
-              <h2 className="font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-                {dict.cta.title}
-              </h2>
-              <p className="mt-3 text-base text-ink-800 sm:text-lg">
-                {dict.cta.subtitle}
-              </p>
-            </div>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-end">
+          <h2 className="font-display text-[clamp(36px,6vw,80px)] font-black leading-[0.95] tracking-tightest">
+            {titleLines.map((line, i) => (
+              <span key={i} className="block">
+                {line}
+              </span>
+            ))}
+          </h2>
+          <div className="flex flex-col items-start gap-6">
+            <p className="text-base leading-relaxed text-white/85 sm:text-lg">
+              {dict.cta.subtitle}
+            </p>
             <Link
               href={`${base}/contact`}
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-ink-900 px-7 py-4 text-sm font-bold text-white transition hover:bg-ink-800"
+              className="group inline-flex items-center gap-2 rounded-full bg-ink-900 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white hover:text-brand-500"
             >
               {dict.cta.button}
-              <span aria-hidden>→</span>
+              <span
+                aria-hidden
+                className="transition-transform group-hover:translate-x-0.5"
+              >
+                →
+              </span>
             </Link>
           </div>
         </div>

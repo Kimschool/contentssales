@@ -4,7 +4,7 @@ export function SectionHeading({
   eyebrow,
   title,
   subtitle,
-  align = "center"
+  align = "left"
 }: {
   eyebrow?: string;
   title: ReactNode;
@@ -14,12 +14,14 @@ export function SectionHeading({
   const alignCls = align === "center" ? "text-center mx-auto" : "text-left";
   return (
     <div className={`max-w-3xl ${alignCls}`}>
-      {eyebrow ? <div className={`divider-label ${align === "center" ? "" : "justify-start"}`}>{eyebrow}</div> : null}
-      <h2 className="mt-5 font-display text-3xl font-bold leading-tight tracking-tight text-ink-900 sm:text-4xl">
+      {eyebrow ? <div className="eyebrow">{eyebrow}</div> : null}
+      <h2 className="mt-6 font-display text-[clamp(32px,4.8vw,56px)] font-black leading-[0.98] tracking-tightest text-ink-900">
         {title}
       </h2>
       {subtitle ? (
-        <p className="mt-4 text-base text-ink-500 sm:text-lg">{subtitle}</p>
+        <p className="mt-5 text-base leading-relaxed text-ink-500 sm:text-lg">
+          {subtitle}
+        </p>
       ) : null}
     </div>
   );

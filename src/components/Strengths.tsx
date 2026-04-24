@@ -1,92 +1,38 @@
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { Container } from "./Container";
-import { SectionHeading } from "./SectionHeading";
-
-const sfx = ["POW!", "BAM!", "WOW!"];
 
 export function Strengths({ dict }: { dict: Dictionary }) {
   return (
-    <section className="relative bg-canvas-soft py-24">
-      {/* corner halftone bursts */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-0 top-0 h-64 w-64 opacity-30"
-        style={{
-          backgroundImage:
-            "radial-gradient(#ca8a04 1px, transparent 1px)",
-          backgroundSize: "14px 14px",
-          maskImage:
-            "radial-gradient(circle at top left, #000 0%, transparent 70%)",
-          WebkitMaskImage:
-            "radial-gradient(circle at top left, #000 0%, transparent 70%)"
-        }}
-      />
-
+    <section className="bg-canvas-soft py-28 sm:py-32">
       <Container>
-        <SectionHeading
-          eyebrow={dict.strengths.eyebrow}
-          title={dict.strengths.title}
-        />
+        <div className="grid gap-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <div className="lg:sticky lg:top-28 lg:self-start">
+            <div className="eyebrow">{dict.strengths.eyebrow}</div>
+            <h2 className="mt-6 font-display text-[clamp(32px,4.4vw,56px)] font-black leading-[0.98] tracking-tightest text-ink-900">
+              {dict.strengths.title}
+            </h2>
+          </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {dict.strengths.items.map((s, idx) => (
-            <article
-              key={s.no}
-              className="group relative rounded-2xl border-2 border-ink-900 bg-white p-8 shadow-[4px_4px_0_rgba(17,28,37,1)] transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_rgba(250,204,21,1)]"
-            >
-              {/* speech bubble — SFX sticker top right */}
-              <div
-                aria-hidden
-                className="absolute -right-3 -top-3 rotate-[8deg] transition group-hover:rotate-[14deg]"
+          <ol className="flex flex-col">
+            {dict.strengths.items.map((s) => (
+              <li
+                key={s.no}
+                className="grid grid-cols-[auto_minmax(0,1fr)] gap-6 border-t border-ink-200 py-10 first:border-t-0 first:pt-0 sm:gap-10"
               >
-                <div className="relative">
-                  <svg viewBox="0 0 80 80" className="h-16 w-16">
-                    <polygon
-                      points="40,4 48,24 70,22 54,38 66,58 44,52 36,74 30,52 8,60 18,40 4,24 26,26"
-                      fill="#facc15"
-                      stroke="#0b1019"
-                      strokeWidth="3"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <span className="absolute inset-0 grid place-items-center font-display text-[10px] font-black tracking-wider text-ink-900">
-                    {sfx[idx % sfx.length]}
-                  </span>
-                </div>
-              </div>
-
-              {/* big number with manga speech bubble tail */}
-              <div className="relative inline-flex">
-                <div className="rounded-2xl border-2 border-ink-900 bg-brand-200 px-4 py-1 font-display text-5xl font-black leading-none tracking-tight text-ink-900">
+                <div className="font-display text-2xl font-bold leading-none tracking-tight text-brand-500 sm:text-3xl">
                   {s.no}
                 </div>
-                {/* bubble tail */}
-                <svg
-                  viewBox="0 0 20 20"
-                  className="absolute -bottom-3 left-6 h-4 w-4"
-                  aria-hidden
-                >
-                  <polygon points="0,0 20,0 4,18" fill="#fde68a" stroke="#0b1019" strokeWidth="2" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              {/* body */}
-              <div className="mt-10 h-px w-12 bg-ink-900" />
-              <h3 className="mt-4 font-display text-xl font-black text-ink-900">
-                {s.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-600">{s.desc}</p>
-
-              {/* bottom meta row */}
-              <div className="mt-6 flex items-center justify-between border-t border-dashed border-ink-300 pt-3 text-[10px] font-bold tracking-[0.22em] text-ink-500">
-                <span>STRENGTH · {s.no}</span>
-                <span aria-hidden className="inline-flex items-center gap-1">
-                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand-500" />
-                  READ ON
-                </span>
-              </div>
-            </article>
-          ))}
+                <div>
+                  <h3 className="font-display text-2xl font-black leading-tight tracking-tight text-ink-900 sm:text-3xl">
+                    {s.title}
+                  </h3>
+                  <p className="mt-3 text-base leading-relaxed text-ink-600 sm:text-lg">
+                    {s.desc}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </Container>
     </section>
