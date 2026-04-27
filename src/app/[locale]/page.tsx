@@ -11,10 +11,11 @@ import { Marquee } from "@/components/Marquee";
 export default async function HomePage({
   params
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  if (!isLocale(params.locale)) notFound();
-  const locale = params.locale as Locale;
+  const { locale: rawLocale } = await params;
+  if (!isLocale(rawLocale)) notFound();
+  const locale = rawLocale as Locale;
   const dict = await getDictionary(locale);
 
   // 메인 hero stats 변경에 따라 마퀴 정합성 맞춤
