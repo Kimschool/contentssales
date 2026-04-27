@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { features } from "@/config/features";
 import { Container } from "./Container";
 
 export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -31,7 +32,9 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </span>
         </div>
 
-        {/* stepped headline */}
+        {/* stepped headline
+            - 우측 컨테이너 라인 침범 방지: 폰트 max 축소 + 좌측 인덴트 축소 (특히 large 뷰포트)
+            - "to BUSINESS." 가 12자라 같은 clamp로 두면 우측 오버플로우 발생 → max 축소 */}
         <h1 className="mt-10 sm:mt-14">
           <span
             className="block font-display font-bold uppercase tracking-tightest text-ink-500"
@@ -41,13 +44,13 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </span>
           <span
             className="mt-2 block font-display font-black leading-[0.88] tracking-tightest text-ink-900"
-            style={{ fontSize: "clamp(64px, 13vw, 200px)" }}
+            style={{ fontSize: "clamp(64px, 12vw, 168px)" }}
           >
             STORY
           </span>
           <span
-            className="mt-1 block pl-[8vw] font-display font-black leading-[0.88] tracking-tightest text-ink-900 sm:pl-[12vw]"
-            style={{ fontSize: "clamp(64px, 13vw, 200px)" }}
+            className="mt-1 block pl-[5vw] font-display font-black leading-[0.88] tracking-tightest text-ink-900 sm:pl-[8vw]"
+            style={{ fontSize: "clamp(56px, 10.5vw, 148px)" }}
           >
             to BUSINESS
             <span className="text-brand-500">.</span>
@@ -72,12 +75,15 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 →
               </span>
             </Link>
-            <Link
-              href={`${base}/services`}
-              className="inline-flex items-center gap-2 rounded-full border border-ink-900 px-7 py-3.5 text-sm font-semibold text-ink-900 transition hover:bg-ink-900 hover:text-white"
-            >
-              {dict.hero.ctaSecondary}
-            </Link>
+            {/* "우리의 작품 보기": 포트폴리오 공개(6월 이후)까지 숨김 — features.showPortfolio 로 토글 */}
+            {features.showPortfolio && (
+              <Link
+                href={`${base}/portfolio`}
+                className="inline-flex items-center gap-2 rounded-full border border-ink-900 px-7 py-3.5 text-sm font-semibold text-ink-900 transition hover:bg-ink-900 hover:text-white"
+              >
+                {dict.hero.ctaSecondary}
+              </Link>
+            )}
           </div>
         </div>
 

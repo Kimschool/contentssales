@@ -3,7 +3,6 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import { notFound } from "next/navigation";
 import { Services } from "@/components/Services";
 import { CtaBanner } from "@/components/CtaBanner";
-import { PageHero } from "@/components/PageHero";
 import { Container } from "@/components/Container";
 
 export default async function ServicesPage({
@@ -17,12 +16,6 @@ export default async function ServicesPage({
 
   return (
     <>
-      <PageHero
-        eyebrow="SERVICES"
-        title={dict.servicesPage.title}
-        subtitle={dict.servicesPage.subtitle}
-      />
-
       <Services locale={locale} dict={dict} showCta={false} />
 
       <section className="bg-canvas-soft py-28 sm:py-32">

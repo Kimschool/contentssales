@@ -15,85 +15,113 @@
   "hero": {
     "eyebrow": "CONTENT · COMMERCE · GLOBAL",
     "title": "From Story\nto Business.",
-    "subtitle": "We turn fandom IP into global businesses — planning, production, worldwide distribution, and monetization under one partner.",
+    "subtitle": "Your imagination, on a bigger stage. From planning and production to global distribution and monetization — WEAVUS walks the full journey with you.",
     "ctaPrimary": "Start a Project",
     "ctaSecondary": "See Our Works",
     "stats": [
-      { "value": "120+", "label": "Episodes yearly" },
-      { "value": "14", "label": "Languages localized" },
-      { "value": "32", "label": "Partner studios" },
-      { "value": "8", "label": "Publishing platforms" }
+      { "value": "200+", "label": "Episodes yearly" },
+      { "value": "4", "label": "Languages localized" },
+      { "value": "1000+", "label": "Localizations delivered" },
+      { "value": "10+", "label": "Global partners" }
     ]
   },
   "strengths": {
     "eyebrow": "3 STRENGTHS",
-    "title": "Why WEAVUS CONTENT",
+    "title": "Why WEAVUS",
     "items": [
       {
         "no": "01",
-        "title": "Genre versatility",
-        "desc": "Romance, fantasy, action, BL, slice-of-life — we propose the right format for every IP."
+        "title": "One seamless workflow",
+        "desc": "Webtoons, print manga, illustration, localization, and distribution — all designed as one unified flow."
       },
       {
         "no": "02",
-        "title": "One-stop production",
-        "desc": "Planning, story, art, coloring, editing, localization, and distribution — all under one roof."
+        "title": "Flexible production, your way",
+        "desc": "Full production or just the process you need — planning, art, localization — it's up to you."
       },
       {
         "no": "03",
-        "title": "Per-process contracts",
-        "desc": "Don't need full production? You can contract a single process — script, color, or translation alone."
+        "title": "Fast, reliable delivery",
+        "desc": "Built on extensive production experience and a partner network that delivers consistent quality on schedule."
       }
     ]
   },
   "services": {
     "eyebrow": "WHAT WE DO",
-    "title": "From Story to Global Business",
-    "subtitle": "Planning, production, global distribution, monetization — we design the full content-to-business pipeline under one roof.",
+    "title": "Our Services",
+    "subtitle": "You just need an idea. Reach out for any kind of consultation.",
     "items": [
       {
         "slug": "planning",
+        "label": "WEBTOON",
         "tag": "01",
-        "title": "Planning / Development",
-        "desc": "We decode fandom, IP, and artist universes — then design story lines built for global serialization.",
+        "title": "Webtoon Planning / Production",
+        "desc": "We can handle the full production pipeline or just the processes you need.",
         "points": [
-          "Fandom research · concept boards",
-          "Season-based serialization",
-          "Spin-offs & derivative strategy"
-        ]
+          "Planning / world-building / script / storyboard / art / color / editing",
+          "Partial outsourcing available"
+        ],
+        "cta": "Request a quote"
       },
       {
         "slug": "production",
+        "label": "LOCALIZATION",
         "tag": "02",
-        "title": "Production",
-        "desc": "Script, storyboard, art, color, editing — end-to-end webtoon production in one studio system.",
+        "title": "Content Localization",
+        "desc": "We localize webtoons, novels, ads and more to meet global standards.",
         "points": [
-          "Planning · script · storyboard",
-          "Division-of-labor studio ops",
-          "QA and serialization management"
-        ]
+          "Professional translation / native review",
+          "Typesetting / editing"
+        ],
+        "cta": "Request a quote"
       },
       {
         "slug": "localization",
+        "label": "DISTRIBUTION",
         "tag": "03",
         "title": "Distribution / Partnership",
-        "desc": "Native localization across 14 languages and simultaneous rollout on 8 global platforms.",
+        "desc": "We distribute content to major platforms, primarily in Japan, Korea, and China.",
         "points": [
-          "Translation + native review",
-          "Typesetting · retouching · SFX",
-          "Global platform launch"
-        ]
+          "Per-platform strategy / contracts / operations support"
+        ],
+        "cta": "Discuss distribution"
       },
       {
         "slug": "studio",
+        "label": "WEBSITE",
         "tag": "04",
-        "title": "Monetization",
-        "desc": "IP licensing, spin-offs, MD, fandom commerce — we extend every story into a revenue model.",
+        "title": "Website Planning / Development",
+        "desc": "We build websites that accurately convey the value of content and products.",
         "points": [
-          "IP licensing strategy",
-          "Fandom commerce · MD development",
-          "Cross-media expansion"
-        ]
+          "Planning / architecture / UI / UX design / development / maintenance"
+        ],
+        "cta": "Discuss website development"
+      },
+      {
+        "slug": "illustration",
+        "label": "ILLUSTRATION",
+        "tag": "05",
+        "title": "Illustration",
+        "desc": "High-quality illustrations tailored to your purpose.",
+        "points": [
+          "Character design / key visuals",
+          "Advertising / promotional illustration",
+          "SNS / merchandise visuals"
+        ],
+        "cta": "Discuss illustration"
+      },
+      {
+        "slug": "manga",
+        "label": "MANGA",
+        "tag": "06",
+        "title": "Print Manga Production",
+        "desc": "From planning to completion of graphic novels and print manga.",
+        "points": [
+          "Story / storyboard / art / editing",
+          "Print-ready data",
+          "Publisher coordination & production support"
+        ],
+        "cta": "Discuss print manga"
       }
     ]
   },
@@ -141,7 +169,7 @@
   },
   "cta": {
     "title": "From Story to Business.\nLet's design it together.",
-    "subtitle": "Let's architect your global content business with WEAVUS.",
+    "subtitle": "Your idea, let's bring it to life right now.",
     "button": "Contact us"
   },
   "servicesPage": {
@@ -191,7 +219,7 @@
       "required": "Please check the required fields."
     },
     "info": [
-      { "label": "Email", "value": "info@weavus.co.jp" },
+      { "label": "Email", "value": "info@weavus-group.com" },
       { "label": "Hours", "value": "Weekdays 10:00 - 19:00 (JST)" },
       { "label": "Address", "value": "Sun Mall Crest 205, 1-19-10 Shinjuku, Shinjuku-ku, Tokyo 160-0022" }
     ]

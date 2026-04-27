@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { features } from "@/config/features";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -23,7 +24,10 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const nav = [
     { href: `${base}`, label: dict.nav.home, exact: true },
     { href: `${base}/services`, label: dict.nav.services },
-    { href: `${base}/portfolio`, label: dict.nav.portfolio },
+    // 포트폴리오: 6월 이후 공개 예정 — features.showPortfolio 로 토글
+    ...(features.showPortfolio
+      ? [{ href: `${base}/portfolio`, label: dict.nav.portfolio }]
+      : []),
     { href: `${base}/creators`, label: dict.nav.creators },
     { href: `${base}/about`, label: dict.nav.about },
     { href: `${base}/contact`, label: dict.nav.contact }

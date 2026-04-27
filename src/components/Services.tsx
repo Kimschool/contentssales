@@ -66,7 +66,7 @@ export function Services({
                     >
                       <ServiceIcon slug={item.slug} />
                       <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-500">
-                        {item.slug}
+                        {item.label}
                       </span>
                     </div>
                   </div>
@@ -102,6 +102,16 @@ export function Services({
                         </li>
                       ))}
                     </ul>
+                    {"cta" in item && item.cta && (
+                      <div className={isEven ? "" : "lg:flex lg:justify-end"}>
+                        <Link
+                          href={`${base}/contact`}
+                          className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink-900 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-500"
+                        >
+                          {item.cta} <span aria-hidden>→</span>
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               </li>

@@ -1,6 +1,6 @@
 export const locales = ["ko", "en", "ja"] as const;
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "ko";
+export const defaultLocale: Locale = "ja";
 
 export const localeLabels: Record<Locale, string> = {
   ko: "KR",

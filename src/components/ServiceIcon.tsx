@@ -1,4 +1,4 @@
-type Slug = "production" | "localization" | "planning" | "studio";
+type Slug = "production" | "localization" | "planning" | "studio" | "illustration" | "manga";
 
 export function ServiceIcon({ slug }: { slug: string }) {
   const key = (slug as Slug) ?? "production";
@@ -12,6 +12,8 @@ export function ServiceIcon({ slug }: { slug: string }) {
         {key === "production" && <ProductionPath />}
         {key === "localization" && <LocalizationPath />}
         {key === "studio" && <StudioPath />}
+        {key === "illustration" && <IllustrationPath />}
+        {key === "manga" && <MangaPath />}
       </svg>
     </span>
   );
@@ -56,6 +58,26 @@ function StudioPath() {
     <>
       <path d="M3 17l4-8 3 5 3-3 4 6" />
       <circle cx="15" cy="5" r="2" />
+    </>
+  );
+}
+
+function IllustrationPath() {
+  return (
+    <>
+      <path d="M14 3l3 3-9 9H5v-3L14 3z" />
+      <path d="M12 5l3 3" />
+    </>
+  );
+}
+
+function MangaPath() {
+  return (
+    <>
+      <rect x="4" y="2" width="12" height="16" rx="1.5" />
+      <path d="M7 6h6" />
+      <path d="M7 9h6" />
+      <path d="M7 12h4" />
     </>
   );
 }

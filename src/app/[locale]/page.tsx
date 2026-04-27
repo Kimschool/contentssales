@@ -17,13 +17,15 @@ export default async function HomePage({
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
 
+  // 메인 hero stats 변경에 따라 마퀴 정합성 맞춤
+  // (구) 14 LANGUAGES → (신) 1000+ LOCALIZATIONS  ※ 로컬라이징 실적 강조
   const marqueeItems = [
     "CONTENT",
     "COMMERCE",
     "GLOBAL",
     "FANDOM IP",
     "STORY TO BUSINESS",
-    "14 LANGUAGES"
+    "1000+ LOCALIZATIONS"
   ];
 
   return (
