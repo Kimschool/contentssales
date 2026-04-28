@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { Hero } from "@/components/Hero";
 import { Strengths } from "@/components/Strengths";
 import { Services } from "@/components/Services";
-import { WorksImpact } from "@/components/WorksImpact";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Marquee } from "@/components/Marquee";
 
@@ -35,7 +34,6 @@ export default async function HomePage({
       <Marquee items={marqueeItems} />
       <Services locale={locale} dict={dict} />
       <Strengths dict={dict} />
-      <WorksImpact locale={locale} dict={dict} />
       <CtaBanner locale={locale} dict={dict} />
     </>
   );

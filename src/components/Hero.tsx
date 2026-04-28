@@ -59,7 +59,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
         {/* subtitle + CTA row (side by side) */}
         <div className="mt-14 grid gap-10 border-t border-ink-200 pt-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <p className="max-w-xl text-base leading-relaxed text-ink-700 sm:text-lg">
+          <p className="max-w-xl whitespace-pre-line text-base leading-relaxed text-ink-700 sm:text-lg">
             {dict.hero.subtitle}
           </p>
           <div className="flex flex-wrap items-center gap-3">

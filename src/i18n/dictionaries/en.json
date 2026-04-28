@@ -58,7 +58,7 @@
         "title": "Webtoon Planning / Production",
         "desc": "We can handle the full production pipeline or just the processes you need.",
         "points": [
-          "Planning / world-building / script / storyboard / art / color / editing",
+          "Planning", "World-building", "Script", "Storyboard", "Art", "Color", "Editing",
           "Partial outsourcing available"
         ],
         "cta": "Request a quote"
@@ -70,8 +70,8 @@
         "title": "Content Localization",
         "desc": "We localize webtoons, novels, ads and more to meet global standards.",
         "points": [
-          "Professional translation / native review",
-          "Typesetting / editing"
+          "Professional translation", "Native review",
+          "Typesetting", "Editing"
         ],
         "cta": "Request a quote"
       },
@@ -82,7 +82,7 @@
         "title": "Distribution / Partnership",
         "desc": "We distribute content to major platforms, primarily in Japan, Korea, and China.",
         "points": [
-          "Per-platform strategy / contracts / operations support"
+          "Per-platform strategy", "Contracts", "Operations support"
         ],
         "cta": "Discuss distribution"
       },
@@ -93,7 +93,7 @@
         "title": "Website Planning / Development",
         "desc": "We build websites that accurately convey the value of content and products.",
         "points": [
-          "Planning / architecture / UI / UX design / development / maintenance"
+          "Planning", "Architecture", "UI", "UX design", "Development", "Maintenance"
         ],
         "cta": "Discuss website development"
       },
@@ -104,9 +104,9 @@
         "title": "Illustration",
         "desc": "High-quality illustrations tailored to your purpose.",
         "points": [
-          "Character design / key visuals",
-          "Advertising / promotional illustration",
-          "SNS / merchandise visuals"
+          "Character design", "Key visuals",
+          "Advertising", "Promotional illustration",
+          "SNS", "Merchandise visuals"
         ],
         "cta": "Discuss illustration"
       },
@@ -117,7 +117,7 @@
         "title": "Print Manga Production",
         "desc": "From planning to completion of graphic novels and print manga.",
         "points": [
-          "Story / storyboard / art / editing",
+          "Story", "Storyboard", "Art", "Editing",
           "Print-ready data",
           "Publisher coordination & production support"
         ],

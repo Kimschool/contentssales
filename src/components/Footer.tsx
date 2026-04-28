@@ -36,8 +36,8 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 </Link>
               </li>
               <li>
-                <Link href={`${base}/portfolio`} className="text-white/80 hover:text-white">
-                  {dict.nav.portfolio}
+                <Link href={`${base}/creators`} className="text-white/80 hover:text-white">
+                  {dict.nav.creators}
                 </Link>
               </li>
               <li>

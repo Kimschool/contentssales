@@ -7,11 +7,9 @@ import { ServiceIcon } from "./ServiceIcon";
 export function Services({
   locale,
   dict,
-  showCta = true
 }: {
   locale: Locale;
   dict: Dictionary;
-  showCta?: boolean;
 }) {
   const base = `/${locale}`;
   return (
@@ -24,7 +22,7 @@ export function Services({
               {dict.services.title}
             </h2>
           </div>
-          <p className="max-w-md text-base leading-relaxed text-ink-500 sm:text-lg">
+          <p className="max-w-md whitespace-pre-line text-base leading-relaxed text-ink-500 sm:text-lg">
             {dict.services.subtitle}
           </p>
         </div>
@@ -119,17 +117,6 @@ export function Services({
           })}
         </ol>
 
-        {showCta ? (
-          <div className="mt-14 flex justify-center">
-            <Link
-              href={`${base}/services`}
-              className="inline-flex items-center gap-2 rounded-full border border-ink-900 px-7 py-3.5 text-sm font-semibold text-ink-900 transition hover:bg-ink-900 hover:text-white"
-            >
-              {dict.nav.services}
-              <span aria-hidden>→</span>
-            </Link>
-          </div>
-        ) : null}
       </Container>
     </section>
   );

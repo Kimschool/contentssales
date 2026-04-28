@@ -17,7 +17,7 @@ export default async function ServicesPage({
 
   return (
     <>
-      <Services locale={locale} dict={dict} showCta={false} />
+      <Services locale={locale} dict={dict} />
 
       <section className="bg-canvas-soft py-28 sm:py-32">
         <Container>

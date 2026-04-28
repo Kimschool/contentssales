@@ -18,7 +18,7 @@ export function CtaBanner({ locale, dict }: { locale: Locale; dict: Dictionary }
             ))}
           </h2>
           <div className="flex flex-col items-start gap-6">
-            <p className="text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="whitespace-pre-line text-base leading-relaxed text-white/85 sm:text-lg">
               {dict.cta.subtitle}
             </p>
             <Link

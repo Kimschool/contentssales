@@ -8,7 +8,7 @@ export function Strengths({ dict }: { dict: Dictionary }) {
         <div className="grid gap-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
           <div className="lg:sticky lg:top-28 lg:self-start">
             <div className="eyebrow">{dict.strengths.eyebrow}</div>
-            <h2 className="mt-6 font-display text-[clamp(32px,4.4vw,56px)] font-black leading-[0.98] tracking-tightest text-ink-900">
+            <h2 className="mt-6 whitespace-pre-line font-display text-[clamp(32px,4.4vw,56px)] font-black leading-[0.98] tracking-tightest text-ink-900">
               {dict.strengths.title}
             </h2>
           </div>
